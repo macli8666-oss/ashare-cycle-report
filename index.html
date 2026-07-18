@@ -132,6 +132,11 @@ a { color: var(--blue); }
   font-family: var(--mono); font-size: 11.5px; letter-spacing: .28em;
   color: var(--red); margin-bottom: 26px; text-transform: uppercase;
 }
+.cover-author {
+  font-family: var(--mono); font-size: 12px; letter-spacing: .34em;
+  color: var(--ink-md); margin-bottom: 18px; text-transform: uppercase;
+}
+.cover-author b { color: var(--ink); font-weight: 700; }
 .cover-title {
   font-size: clamp(44px, 6.6vw, 78px); font-weight: 700;
   line-height: 1.08; letter-spacing: -0.008em;
@@ -641,6 +646,8 @@ table.dt td .kn.neg { color: var(--neg); border-bottom-color: rgba(194,47,78,.45
 
 /* ── cover on blueprint (State C): light text over dark blueprint canvas ── */
 #cover.on-blue .cover-kicker { color: #9db8ff; }
+#cover.on-blue .cover-author { color: #b9c9e8; }
+#cover.on-blue .cover-author b { color: #eef3ff; }
 #cover.on-blue .cover-title { color: #eef3ff; }
 #cover.on-blue .cover-title .cover-num { color: #8fb0ff; }
 #cover.on-blue .cover-sub { color: #c6d4f5; }
@@ -789,7 +796,7 @@ ul.ds-mon li:hover .ds-mon-l { color: var(--red); }
 
 <!-- ═══ 顶部导航(二级菜单钻取) ═══ -->
 <header id="topnav" aria-label="章节导航">
-  <a class="tn-brand" href="#cover">周期定位图<b>·26H1</b></a>
+  <a class="tn-brand" href="#cover">璟隆研究<b>·周期定位图26H1</b></a>
   <nav>
     <div class="tn-item"><a href="#sec-exec" data-nav="sec-exec">总览</a></div>
     <div class="tn-item"><a href="#sec-map" data-nav="sec-map">行业地图</a></div>
@@ -827,6 +834,7 @@ ul.ds-mon li:hover .ds-mon-l { color: var(--red); }
   <canvas id="cover-canvas-x" style="display:none"></canvas>
   <canvas id="cover-canvas-w" style="display:none"></canvas>
   <div class="cover-inner">
+    <p class="cover-author"><b>璟隆研究</b> · JINGLONG RESEARCH · 出品</p>
     <p class="cover-kicker">行业周期重建 · 十三行业深潜 + 31 行业扫描 + 17 行业档案 · 数据截至 2026-07-17</p>
     <h1 class="cover-title">A股行业周期定位图<br><span class="cover-num">2026 年中 · K 型地图</span></h1>
     <p class="cover-sub">上升周期不是全局的:电子 / 电新 / 创新药 / 有色 / 军工 / 券商已在右侧,猪 / 白酒 / 汽车 / 光伏还在底部观察区,煤炭刚被上调半档</p>
@@ -1215,7 +1223,7 @@ ul.ds-mon li:hover .ds-mon-l { color: var(--red); }
     <div id="source-list"></div>
   </div>
   <div class="prose">
-    <p class="colophon">交互研究版 · 编译日期 2026-07-18 · 数据截至 2026-07-17 · 本报告不提供投资建议 · 方法:industry-cycle 五阶段判定 + 双案例纪律 + 旧数据闸门</p>
+    <p class="colophon"><b>璟隆研究 · JINGLONG RESEARCH 出品</b> · 交互研究版 · 编译日期 2026-07-18 · 数据截至 2026-07-17 · 本报告不提供投资建议 · 方法:industry-cycle 五阶段判定 + 双案例纪律 + 旧数据闸门</p>
   </div>
 </footer>
 
