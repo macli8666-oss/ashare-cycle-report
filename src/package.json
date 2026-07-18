@@ -1,0 +1,9 @@
+{
+  "name": "ashare-cycle-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A股行业周期定位图 · 2026 年中 — interactive research report site",
+  "scripts": {
+    "dev": "node scripts/serve.js"
+  }
+}

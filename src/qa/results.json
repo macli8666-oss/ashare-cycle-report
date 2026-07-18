@@ -1,0 +1,97 @@
+{
+  "widths": {
+    "1280": {
+      "fontEtBook": true,
+      "fontSongti": true,
+      "fontMenlo": true,
+      "scrollW": 1280,
+      "clientW": 1280,
+      "bodyScrollW": 1280,
+      "srcCount": 51,
+      "rptIndustries": 31,
+      "height": 95947,
+      "hOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    "1680": {
+      "fontEtBook": true,
+      "fontSongti": true,
+      "fontMenlo": true,
+      "scrollW": 1680,
+      "clientW": 1680,
+      "bodyScrollW": 1680,
+      "srcCount": 51,
+      "rptIndustries": 31,
+      "height": 89105,
+      "hOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": []
+    }
+  },
+  "coverModes": {
+    "x": "shot",
+    "w": "shot",
+    "d": "shot×2"
+  },
+  "drills": [
+    {
+      "width": 1680,
+      "idx": 0,
+      "knCount": 468,
+      "hidden": false,
+      "text": "✕\n      农林牧渔 · YTD 涨跌幅\n      -20.6%\n      2026-01-01 至 2026-07-17 收盘;近 20 日 3.9%;2023 以来区间位置 18.7%\n      来源 · K33 · industry_master.csv（申万/Wind,2026-07-17）"
+    },
+    {
+      "width": 1680,
+      "idx": 1,
+      "knCount": 468,
+      "hidden": false,
+      "text": "✕\n      农林牧渔 · 2026Q1 营收同比\n      +3.3%\n      阶段判定:clearing尾声→bottom_observation（暂定） · 2026Q1 毛利率同比变动 -3.61pt\n      来源 · K33 · industry_master.csv（2026Q1 财务,2026-07-17）"
+    },
+    {
+      "width": 1680,
+      "idx": 2,
+      "knCount": 468,
+      "hidden": false,
+      "text": "✕\n      基础化工 · YTD 涨跌幅\n      -7.6%\n      2026-01-01 至 2026-07-17 收盘;近 20 日 -14.7%;2023 以来区间位置 53.7%\n      来源 · K33 · industry_master.csv（申万/Wind,2026-07-17）"
+    },
+    {
+      "width": 1680,
+      "idx": "stockline-canvas",
+      "hidden": false,
+      "text": "✕\n      类比窗口 · 同型类比\n      类比B：2019-20 5G/国产替代牛\n      2019-01 → 2021-12 · 窗口语义:同型类比;类比价值在机制对照,不在行情暗示\n      来源 · cycle_report.json · charts.chart_sl_801080.stage_bands"
+    },
+    {
+      "width": 1280,
+      "idx": 0,
+      "knCount": 468,
+      "hidden": false,
+      "text": "✕\n      农林牧渔 · YTD 涨跌幅\n      -20.6%\n      2026-01-01 至 2026-07-17 收盘;近 20 日 3.9%;2023 以来区间位置 18.7%\n      来源 · K33 · industry_master.csv（申万/Wind,2026-07-17）"
+    },
+    {
+      "width": 1280,
+      "idx": 1,
+      "knCount": 468,
+      "hidden": false,
+      "text": "✕\n      农林牧渔 · 2026Q1 营收同比\n      +3.3%\n      阶段判定:clearing尾声→bottom_observation（暂定） · 2026Q1 毛利率同比变动 -3.61pt\n      来源 · K33 · industry_master.csv（2026Q1 财务,2026-07-17）"
+    },
+    {
+      "width": 1280,
+      "idx": 2,
+      "knCount": 468,
+      "hidden": false,
+      "text": "✕\n      基础化工 · YTD 涨跌幅\n      -7.6%\n      2026-01-01 至 2026-07-17 收盘;近 20 日 -14.7%;2023 以来区间位置 53.7%\n      来源 · K33 · industry_master.csv（申万/Wind,2026-07-17）"
+    },
+    {
+      "width": 1280,
+      "idx": "stockline-canvas",
+      "hidden": false,
+      "text": "✕\n      类比窗口 · 同型类比\n      类比B：2019-20 5G/国产替代牛\n      2019-01 → 2021-12 · 窗口语义:同型类比;类比价值在机制对照,不在行情暗示\n      来源 · cycle_report.json · charts.chart_sl_801080.stage_bands"
+    }
+  ],
+  "errors": [],
+  "reducedMotion": {
+    "pageErrors": []
+  }
+}

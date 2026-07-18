@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A股行业周期定位图 · 2026 年中 — 交互研究版</title>
+<meta name="description" content="上升周期的K型地图:盈利右侧与底部观察并存。六个行业深潜 + 31个申万一级行业扫描,数据截至 2026-07-17。">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══ 顶部导航(二级菜单钻取) ═══ -->
+<header id="topnav" aria-label="章节导航">
+  <a class="tn-brand" href="#cover">璟隆研究<b>·周期定位图26H1</b></a>
+  <nav>
+    <div class="tn-item"><a href="#sec-exec" data-nav="sec-exec">总览</a></div>
+    <div class="tn-item"><a href="#sec-map" data-nav="sec-map">行业地图</a></div>
+    <div class="tn-item">
+      <a href="#sec-ai" data-nav="deep">深潜行业 ▾</a>
+      <div class="tn-sub">
+        <p class="tn-grp">右侧进行中</p>
+        <a href="#sec-ai">AI 算力链 <span class="st hot">再扩张·双族确认</span></a>
+        <a href="#sec-nonferrous">有色金属 <span class="st hot">基本面右侧×股价左侧</span></a>
+        <a href="#sec-defense">国防军工 <span class="st hot">复苏初期·暂定偏确认</span></a>
+        <a href="#sec-nonbank">非银金融 <span class="st hot">券商再扩张</span></a>
+        <a href="#sec-machinery">机械设备 <span class="st hot">映射 2017</span></a>
+        <a href="#sec-pharma">创新药 <span class="st hot">复苏初期→再扩张</span></a>
+        <a href="#sec-ne">新能源双链 <span class="st hot">锂电右侧 / 光伏政策底</span></a>
+        <a href="#sec-computer">计算机 <span class="st hot">结构性复苏·暂定偏确认</span></a>
+        <a href="#sec-media">传媒 <span class="st">游戏再扩张 / 影视承压</span></a>
+        <p class="tn-grp">临近拐点</p>
+        <a href="#sec-hog">猪周期 <span class="st">底部观察·暂定</span></a>
+        <a href="#sec-baijiu">白酒 <span class="st">底部观察·暂定</span></a>
+        <a href="#sec-chem">基础化工 <span class="st">底部→复苏过渡</span></a>
+        <a href="#sec-auto">汽车整车 <span class="st">底部观察·暂定</span></a>
+      </div>
+    </div>
+    <div class="tn-item"><a href="#sec-matrix" data-nav="sec-matrix">公司矩阵</a></div>
+    <div class="tn-item"><a href="#sec-dossier" data-nav="sec-dossier">全景档案</a></div>
+    <div class="tn-item"><a href="#sec-monitor" data-nav="sec-monitor">监测</a></div>
+    <div class="tn-item"><a href="#sec-sources" data-nav="sec-sources">来源</a></div>
+  </nav>
+  <div class="tn-progress"><i id="tn-bar"></i></div>
+</header>
+
+<!-- ═══ 封面 · 四态引擎(见 COVER.md) ═══ -->
+<header id="cover">
+  <canvas id="cover-canvas"></canvas>
+  <canvas id="cover-canvas-x" style="display:none"></canvas>
+  <canvas id="cover-canvas-w" style="display:none"></canvas>
+  <div class="cover-inner">
+    <p class="cover-author"><b>璟隆研究</b> · JINGLONG RESEARCH · 出品</p>
+    <p class="cover-kicker">行业周期重建 · 十三行业深潜 + 31 行业扫描 + 17 行业档案 · 数据截至 2026-07-17</p>
+    <h1 class="cover-title">A股行业周期定位图<br><span class="cover-num">2026 年中 · K 型地图</span></h1>
+    <p class="cover-sub">上升周期不是全局的:电子 / 电新 / 创新药 / 有色 / 军工 / 券商已在右侧,猪 / 白酒 / 汽车 / 光伏还在底部观察区,煤炭刚被上调半档</p>
+    <p class="cover-lede">2026H2 的 A 股不存在全局上升周期,存在的是一张 K 型地图。本报告对十三个行业做深潜、对 31 个申万一级行业做扫描、为其余十七个行业建档案,全部经双案例纪律与旧数据闸门过滤;报告形成于 7/13-7/17 市场调整当周,该周被定性为拥挤交易出清而非基本面系统性恶化。</p>
+    <div class="cover-chips">
+      <button class="chip" data-goto="#sec-exec">核心结论</button>
+      <button class="chip" data-goto="#sec-map">31 行业地图</button>
+      <button class="chip" data-goto="#sec-ai">AI 算力链</button>
+      <button class="chip" data-goto="#sec-nonferrous">有色</button>
+      <button class="chip" data-goto="#sec-defense">军工</button>
+      <button class="chip" data-goto="#sec-hog">猪周期</button>
+      <button class="chip" data-goto="#sec-matrix">公司矩阵</button>
+      <button class="chip" data-goto="#sec-dossier">全景档案</button>
+      <button class="chip" data-goto="#sec-glossary">大白话词典</button>
+      <button class="chip" data-goto="#sec-monitor">监测信号</button>
+    </div>
+    <p class="cover-anchor">证据分级:交易所/监管披露 &gt; 行业协会/权威数据库 &gt; 媒体转述 · 全部类比区分「当时可知」与「事后补全」 · 不提供买卖建议,不设价格目标</p>
+    <div class="cover-mode" id="cover-mode" aria-label="封面图案变体">
+      <button data-mode="rec" class="on">A · 仪表盘递归</button>
+      <button data-mode="x">B · 仪表盘拆解</button>
+      <button data-mode="w">C · 工程蓝图</button>
+      <button data-mode="d">D · 开箱</button>
+    </div>
+    <div class="scroll-hint"><span></span>SCROLL</div>
+  </div>
+</header>
+
+<main>
+
+<!-- ═══ §0 总览:K 型地图 + 证据仪表盘 + 盈利加速 + 调整周时间线 ═══ -->
+<section id="sec-exec" class="band" data-win="exec">
+  <div class="prose">
+    <p class="sec-no">§0 · 核心结论</p>
+    <h2>2026H2 的 A 股不存在全局上升周期,存在的是一张 K 型地图</h2>
+    <p class="dek">电子、通信、有色金属、锂电储能、军工、创新药、券商、工程机械这一小撮行业,生意是真的在变好,而且至少有两组互相独立的证据能证明;猪、白酒、汽车、光伏这些行业只是「跌不动了、有点苗头」,证据还不够,只能说在底部观察。真正进入上升周期的,大约只占全部三十一个行业的三分之一。</p>
+    <p><b>这份报告回答一个问题:2026 年下半年,A 股哪些行业正在进入上升周期?</b>先说结论:最硬的是 AI 算力(电子和通信)——存储芯片连续两个季度大涨价、美国云厂商今年要花的钱指引上修到约 7950 亿美元、龙头公司一季度利润翻倍甚至翻几倍;其次是创新药(上半年海外授权 608 亿美元创纪录)、锂电储能(排产创新高)、有色(一季度收入增速全市场第一)、军工(订单空窗期快熬到头)、券商(每天成交约三万亿、中报全部预喜)、工程机械(挖掘机卖了两年多才刚轮到换新)。另一边:猪价还亏在成本线以下、茅台批价还在寻底、汽车 6 月销量跌两成、光伏组件还在现金成本线上挣扎——这些只能叫「底部观察」,不叫复苏。</p>
+    <p>每个行业我们都做了同一件事:拿它和历史上最像的几段行情对照(比如猪周期对照 2014 年中、白酒对照 2014 下半年、工程机械对照 2017 年),而且只用「当时的人能看到的信息」来对照,不许事后诸葛。两种可能都摆出来:如果历史重演会怎样,如果这次不一样会怎样——不和稀泥。每个结论后面都附了「盯什么」:哪几个数据一出现,结论就加强或作废。</p>
+    <p>映射含义:已经在右侧的行业,盯的不再是底部位置,而是「增速什么时候收敛、价格环比什么时候见顶」;还在底部观察的行业,各自对照到历史底部区域——<b>猪 ≈ 2014 年中、白酒 ≈ 2014H2-2015H1、汽车 ≈ 2018 末-2019 初、光伏 ≈ 2012Q4-2013Q1、煤炭 ≈ 2016 供改前半场</b>。看不懂的术语,去<a href="#sec-glossary" class="ink-link">大白话词典</a>查。</p>
+  </div>
+  <div class="wide xl"><div id="evidence-chart" class="chart-frame"></div></div>
+  <div class="prose">
+    <h3 class="sub-h">盈利加速的底色,拥挤出清的当周</h3>
+    <p>全 A 2026Q1 净利同比 +5.0~7.9%,较 2025 年报(+0.2~0.8%)明显加速——这是上升周期判定的宏观底色;中报预告总预喜率 43.9%(2025 年同期 42.8%,五年中枢约 46%),盈利在扩散但强度平庸。报告形成于 7/13-7/17 调整当周:沪深 300 周跌 5.4%(六年半最大周跌幅),融资余额单周净偿还约 800 亿元(7/14 单日 -347 亿元),宽基 ETF 四日净流入约 1200 亿元对冲。摩根大通(7/17)定性为「前期高杠杆、高拥挤交易的集中出清,而非基本面系统性恶化」;兴业证券(7/14)测得 TMT 拥挤度已降至 -1.5σ(2-3 年 8% 分位)。外部扰动为 7/8 美伊冲突升级。</p>
+  </div>
+  <div class="wide"><div id="profit-chart" class="chart-frame"></div></div>
+  <div class="prose">
+    <blockquote class="quote-card">
+      <p class="q-text">这轮下跌是前期高杠杆、高拥挤交易的集中出清,而非基本面系统性恶化。</p>
+      <p class="q-who">— <b>摩根大通</b>(中国商报转载),2026-07-17</p>
+      <div class="q-why"><span class="q-lab">背景</span>7/13-7/17 沪深 300 周跌 5.4%,为六年半最大周跌幅;融资余额单周净偿还约 800 亿元。
+        <span class="q-lab why">为何重要</span>若定性成立,则调整洗掉的是杠杆而非盈利预期,周期判定不因单周行情改写。</div>
+    </blockquote>
+  </div>
+  <div class="wide xl"><div id="adjust-chart" class="chart-frame"></div></div>
+</section>
+
+<!-- ═══ §1 方法论 ═══ -->
+<section id="sec-method" class="band" data-win="method">
+  <div class="prose">
+    <p class="sec-no">§1 · 方法论</p>
+    <h2>五阶段判定 + 双案例纪律,宁可写缺口不编造</h2>
+    <p class="dek">每个行业的周期位置由 forcing 变量读数决定,不由叙事决定;每个类比窗口必须区分「当时可知」与「事后补全」。</p>
+    <p>forcing 变量优先级:价格/盈利族(商品价格、合约价、批价、盈利增速)与资金/拥挤度族(成交拥挤度、资金流、估值分位)必须至少各有一个独立证据,才允许给出 two_family_supported;单族信号一律 tentative。证据分级:T1 = 交易所/监管披露,T2 = 行业协会/权威数据库,T3 = 媒体转述;公司数据以 Gildata(交易所披露口径)为主,关键数字与媒体披露交叉验证。</p>
+  </div>
+  <div class="wide xl">
+    <div class="term-mag">
+      <article class="term" tabindex="0">
+        <h3 class="t-abbr">五阶段</h3>
+        <p class="t-full">STAGE TAXONOMY</p>
+        <p class="t-gist">盈利承压 → 出清 → 底部观察 → 复苏初期 → 再扩张。</p>
+        <div class="t-more"><p>profit_pressure(盈利承压)→ clearing(出清)→ bottom_observation(底部观察)→ early_recovery(复苏早期)→ re_expansion(再扩张)。阶段迁移只能由 forcing 变量读数触发,不允许由行情涨跌反推。</p></div>
+        <p class="t-hint">悬停查看完整定义</p>
+      </article>
+      <article class="term" tabindex="0">
+        <h3 class="t-abbr">双案例</h3>
+        <p class="t-full">SAME / DIFFERENT CASE</p>
+        <p class="t-gist">每个判定同时给出机制一致与机制断裂两种映射,冲突并置不调和。</p>
+        <div class="t-more"><p>same_case 回答「如果历史机制重演,现在映射到哪」;different_case 回答「如果这次不一样,断裂点在哪」。两者证据同时陈列,不做概率加权、不合成单一结论——盈利是真的与估值也是真的贵,可以同时成立。</p></div>
+        <p class="t-hint">悬停查看完整定义</p>
+      </article>
+      <article class="term" tabindex="0">
+        <h3 class="t-abbr">旧数据闸门</h3>
+        <p class="t-full">OLD-DATA GATE</p>
+        <p class="t-gist">引用历史窗口前,必须重建当时可知的队列证据与序列证据。</p>
+        <div class="t-more"><p>凡引用历史类比窗口,必须重建该窗口当时可知的公司队列(含失败者)与价格/财务序列,否则降级为辅助锚(hindsight)或直接拒绝。本包 26 个选定窗口中 21 个为 contemporaneous / near_contemporaneous,5 个事后锚仅作对照,不单独支撑任何判定。</p></div>
+        <p class="t-hint">悬停查看完整定义</p>
+      </article>
+    </div>
+  </div>
+  <div class="prose">
+    <p class="muted">置信度三级:tentative(暂定)/ two_family_supported(双证据族确认)/ conflicted(证据冲突)。31 行业扫描为简化框架,未逐行业过旧数据闸门,一律标「暂定」;核心结论仅依赖六个深潜行业。</p>
+  </div>
+</section>
+
+<!-- ═══ §1.5 名词大白话词典 ═══ -->
+<section id="sec-glossary" class="band" data-win="method">
+  <div class="prose">
+    <p class="sec-no">§1.5 · 名词大白话词典</p>
+    <h2>报告里的行话,用买菜的话翻译一遍</h2>
+    <p class="dek">后面章节会反复用到这些词。每条不超过两行,看不懂时回来查。</p>
+  </div>
+  <div class="wide xl"><div id="glossary-grid"></div></div>
+</section>
+
+<!-- ═══ §2 31 行业阶段地图 ═══ -->
+<section id="sec-map" class="band" data-win="map">
+  <div class="prose">
+    <p class="sec-no">§2 · 行业地图</p>
+    <h2>31 行业阶段地图:10 个已在上升象限,10 个贴着底部观察区</h2>
+    <p class="dek">每一只仪表盘的指针都来自真实判定:双证据族确认的电子、通信(光模块/CPO)、电新(锂电/储能)、有色、军工、非银、机械、计算机、传媒、医药指向复苏/再扩张区;煤炭本期上调半档进入复苏边缘;农林牧渔、食品饮料、汽车停在底部观察。</p>
+    <p>扫描框架下,申万 31 个一级行业中 10 个进入上升周期象限、10 个临近上升——上升周期是结构性的,覆盖约三分之一行业。本期复核并入 13 个深潜与 17 份档案的判定:煤炭由「政策底」上调至 early_recovery 暂定(盈利确认族仍缺),公用事业改判 profit_pressure(量增价减的盈利平台期),综合维持不评级。<b>点击仪表盘:A 层行业进深潜章节,B 层行业进全景档案。</b></p>
+    <p class="rail-note">右栏仪表盘与本地图同步:指针角度 = 阶段判定,外环 = YTD 涨跌幅。</p>
+  </div>
+  <div class="wide xl"><div id="map-chart" class="chart-frame"></div></div>
+  <div class="prose"><h3 class="sub-h">增长与股价的背离:基本面的右侧尚未被资金全面定价</h3>
+    <p>军工 Q1 营收 +20.0% 而股价 YTD -23.1%,有色 Q1 营收 +31.7% 而股价自 1 月高点回撤约三分之一,电子营收 +29.4% 领涨——营收与股价两个序列的对照定位四象限:双高 = 复苏确认,营收高股价低 = 背离候选,双低 = 仍承压。</p></div>
+  <div class="wide xl"><div id="sw31-chart" class="chart-frame"></div></div>
+  <div class="wide xl"><div id="sw31-table"></div></div>
+</section>
+
+<!-- ═══ §3 AI 算力链 ═══ -->
+<section id="sec-ai" class="band" data-win="ai">
+  <div class="prose">
+    <p class="sec-no">§3 · 深潜 ① AI 算力链 <span class="stage-badge hot">RE_EXPANSION · 双族确认</span></p>
+    <h2>AI 算力:盈利右侧已确认,盯的是增速收敛与价格环比,不是底部</h2>
+    <p class="dek">电子/通信处在 re_expansion 进行中:DRAM 合约价连续两季大涨、云厂 capex 指引上修,双证据族确认;风险不在需求证伪,而在 2000 式债务化 capex 与估值透支。</p>
+    <p>DRAM 合约价 2026Q1 环比 +90~95%、Q2 +58~63%——价格弹性仍在释放;北美云厂 2026 年 capex 指引约 7950 亿美元(+60%,第三方测算,真实披露待 7 月下旬财报季);台积电魏哲家(7/16):「未来三年的资本支出将显著高于过去三年。」拥挤度已出清至 -1.5σ(2-3 年 8% 分位)——7 月调整洗掉了杠杆,没洗掉盈利。中际旭创 Q1 营收 +192.1%、新易盛 2025 年净利 +235.9%——盈利兑现速度历史罕见。</p>
+    <div class="subnav">
+      <a href="#sec-hog">下一行业:猪周期 →</a><a href="#chart-sl-801080">电子指数 12 年</a><a href="#chart-sl-801770">通信指数 12 年</a><a href="#table-ai">公司表</a><a href="#verdict-ai">判定天平</a>
+    </div>
+  </div>
+  <div class="wide xl"><div id="chart-sl-801080" class="chart-frame"></div></div>
+  <div class="wide xl"><div id="chart-sl-801770" class="chart-frame"></div></div>
+  <div class="wide" id="verdict-ai"><div id="verdict-chart-ai" class="chart-frame"></div></div>
+  <div class="prose">
+    <blockquote class="quote-card">
+      <p class="q-text">未来三年的资本支出将显著高于过去三年。</p>
+      <p class="q-who">— <b>台积电 CEO 魏哲家</b>,2026Q2 法说会,2026-07-16</p>
+      <div class="q-why"><span class="q-lab">背景</span>北美云厂 2026 年 capex 指引约 7950 亿美元(+60%),为第三方测算口径。
+        <span class="q-lab why">为何重要</span>capex 承诺是 AI 链收入的领先指标;指引下修将领先 A 股算力订单拐点 2-3 个季度。</div>
+    </blockquote>
+  </div>
+  <div class="wide xl" id="table-ai"><div id="table-companies-ai" class="tbl-host"></div></div>
+</section>
+
+<!-- ═══ §4 猪周期 ═══ -->
+<section id="sec-hog" class="band" data-win="hog">
+  <div class="prose">
+    <p class="sec-no">§4 · 深潜 ② 猪周期 <span class="stage-badge obs">BOTTOM_OBSERVATION · 暂定</span></p>
+    <h2>猪周期:能繁去化慢于红线节奏,映射 2014 年中——底部观察,不是右侧</h2>
+    <p class="dek">猪价跌破多数主体现金成本、6 月去化提速至 -39 万头,症状齐备;但能繁 3904 万头距离 3750 万头红线仍需 5 个月+,2018-19 式弹性不可线性外推。</p>
+    <p>能繁母猪 3904 万头(2026Q1 末,连续 9 个月下降),较峰值去化约 4.9%——幅度远小于 2014 年的 -14%;6 月单月去化 -39 万头(1-6 月月均仅 -15.2 万)——去化提速但需连续 3 个月 ≥30 万头确认。均价 11.6 元/kg vs 行业成本 12-13 元——多数主体亏损,产能出清的 forcing 已就位。牧原预告 H1 盈利 105-110 亿——头部盈利与产能去化并存,正是 2014 年中的 K 型特征。</p>
+    <div class="subnav">
+      <a href="#sec-baijiu">下一行业:白酒 →</a><a href="#chart-sl-801010">农牧指数 12 年</a><a href="#table-hog">公司表</a><a href="#verdict-hog">判定天平</a>
+    </div>
+  </div>
+  <div class="wide xl"><div id="chart-sl-801010" class="chart-frame"></div></div>
+  <div class="wide" id="verdict-hog"><div id="verdict-chart-hog" class="chart-frame"></div></div>
+  <div class="prose">
+    <blockquote class="quote-card">
+      <p class="q-text">生猪产能已回到合理水平。</p>
+      <p class="q-who">— <b>农业农村部新闻发布会</b>,2022-01-20(后四个季度被证伪,作为误判范本引用)</p>
+      <div class="q-why"><span class="q-lab">背景</span>2021-06 能繁高点 4564 万头后,至 2022-01 仅调减 274 万头(-6%),去化不彻底。
+        <span class="q-lab why">为何重要</span>「产能回到合理水平」的官方判断曾四次被价格证伪——本报告对同类表述一律要求月度序列验证。</div>
+    </blockquote>
+  </div>
+  <div class="wide xl" id="table-hog"><div id="table-companies-hog" class="tbl-host"></div></div>
+</section>
+
+<!-- ═══ §5 白酒 ═══ -->
+<section id="sec-baijiu" class="band" data-win="baijiu">
+  <div class="prose">
+    <p class="sec-no">§5 · 深潜 ③ 白酒 <span class="stage-badge obs">BOTTOM_OBSERVATION · 暂定</span></p>
+    <h2>白酒:批价企稳是症状反弹,现金底未确认——2014H2-2015H1 磨底段</h2>
+    <p class="dek">茅台批价自 6/26 低点 1490 元回升至 1490-1530 区间,但 Q1 收现 -18.88% 远差于营收 -7.8%、预收 -18.9%——现金底未确认前,只是磨底,不是 2016 式复苏。</p>
+    <p>茅台一批价自高点 2600 元累计 -39%、历时 13 个月——幅度与时长已超 2018 浅调整(-17%、约 1 年),逼近 2013-15 型。Q1 收现 -18.88% &gt;&gt; 营收 -7.8%,预收 -18.9%——渠道仍在去杠杆。茅台 PE 分位 3.1%、五粮液 42.1%——估值已计入深度出清,但估值低不是右侧信号。100-300 元大众价格带动销正增长、300-800 元萎缩——挤压式见底与 2014 年同型。</p>
+    <div class="subnav">
+      <a href="#sec-ne">下一行业:新能源双链 →</a><a href="#chart-sl-801120">食品饮料指数 12 年</a><a href="#table-baijiu">公司表</a><a href="#verdict-baijiu">判定天平</a>
+    </div>
+  </div>
+  <div class="wide xl"><div id="chart-sl-801120" class="chart-frame"></div></div>
+  <div class="wide" id="verdict-baijiu"><div id="verdict-chart-baijiu" class="chart-frame"></div></div>
+  <div class="prose">
+    <blockquote class="quote-card">
+      <p class="q-text">去公务消费、政务消费将是白酒行业未来的新常态。</p>
+      <p class="q-who">— <b>贵州茅台 2014 年年度报告</b>,2015-04</p>
+      <div class="q-why"><span class="q-lab">背景</span>2014 年茅台营收 +2.1%、净利 +1.4%,为 16 家酒企中唯一双增;其后 2015 预收回升、2016 提价潮确认复苏。
+        <span class="q-lab why">为何重要</span>「新常态」判断写在出清最深时点上——本轮 2025 禁酒令后,需求结构脆弱性超过 2013-15。</div>
+    </blockquote>
+  </div>
+  <div class="wide xl" id="table-baijiu"><div id="table-companies-baijiu" class="tbl-host"></div></div>
+</section>
+
+<!-- ═══ §6 新能源双链 ═══ -->
+<section id="sec-ne" class="band" data-win="ne">
+  <div class="prose">
+    <p class="sec-no">§6 · 深潜 ④ 新能源双链 <span class="stage-badge hot">锂电 EARLY_RECOVERY / 光伏 政策底</span></p>
+    <h2>新能源:锂电在右侧、光伏在政策底——同一指数里的两个周期</h2>
+    <p class="dek">电池排产创新高、碳酸锂自底部 +16%,锂电/储能映射 2020-21 渗透率跃迁;光伏反内卷政策底已现(2025-07),但市场化底未至,映射 2012Q4-2013Q1。</p>
+    <p>Q2 电池排产 342.5GWh 环比 +2.2% 创新高,储能成为锂电需求第一驱动(高盛);碳酸锂 6.6-6.7 万/吨,自 6/23 低点 5.84 万反弹 +16%——价格族信号 partial。多晶硅 3.5 万/吨守住现金成本(3.2-3.4 万),组件 0.71-0.75 元/W 未顺价——光伏仅政策底;2026-01-08 市监总局叫停光伏自律减产,7/2 三项强制国标发布、2027-01-01 实施,政策空窗至年底。宁德 Q1 净利 207.3 亿 +48.9%、全球份额 38%——龙头盈利右侧确认。</p>
+    <div class="subnav">
+      <a href="#sec-pharma">下一行业:创新药 →</a><a href="#chart-sl-801730">电力设备指数 12 年</a><a href="#table-ne">公司表</a><a href="#verdict-ne">判定天平</a>
+    </div>
+  </div>
+  <div class="wide xl"><div id="chart-sl-801730" class="chart-frame"></div></div>
+  <div class="wide" id="verdict-ne"><div id="verdict-chart-ne" class="chart-frame"></div></div>
+  <div class="prose">
+    <blockquote class="quote-card">
+      <p class="q-text">光伏行业 90% 的多晶硅企业已经停产。</p>
+      <p class="q-who">— <b>中国光伏产业联盟秘书长王勃华</b>,第五届光伏会议(via Solarzoom),2012-12-11</p>
+      <div class="q-why"><span class="q-lab">背景</span>2012-13 双反出清:尚德 2013-03 破产、赛维 2015 重整、英利 2016 重整;存活者隆基/天合/晶澳其后市值新高。
+        <span class="q-lab why">为何重要</span>政策底(2012-11)→ 市场化底(2013-03 尚德破产)→ 行情底(2013-07 国发 24 号文)的三底时序,是本轮光伏的映射模板。</div>
+    </blockquote>
+  </div>
+  <div class="wide xl" id="table-ne"><div id="table-companies-ne" class="tbl-host"></div></div>
+</section>
+
+<!-- ═══ §7 创新药 ═══ -->
+<section id="sec-pharma" class="band" data-win="pharma">
+  <div class="prose">
+    <p class="sec-no">§7 · 深潜 ⑤ 创新药 <span class="stage-badge hot">EARLY_RECOVERY → RE_EXPANSION · 双族确认</span></p>
+    <h2>创新药:政策是点火器、出海是燃料——右侧确认,盯 BD 金额环比</h2>
+    <p class="dek">H1 BD 出海 608 亿美元创纪录、商保目录落地、CXO 订单创新高,双证据族确认右侧;风险在估值(恒瑞 2021 年 PE 104 倍的教训)与 BD 持续性。</p>
+    <p>H1 2026 BD 出海总金额 608 亿美元(2025 全年 1356.6 亿美元)——产业逻辑从「政策定价」切换为「全球定价」;商保创新药目录初审公示(557 个基本医保 + 54 个商保品种),Q4 终审——支付端改革落地。药明康德在手订单 597.7 亿 +23.6% 创新高——CXO 作为卖水人确认景气;美联储 6 月降息 25bp 至 3.50-3.75%——利率顺风仍在。</p>
+    <div class="subnav">
+      <a href="#sec-auto">下一行业:汽车整车 →</a><a href="#chart-sl-801150">医药生物指数 12 年</a><a href="#table-pharma">公司表</a><a href="#verdict-pharma">判定天平</a>
+    </div>
+  </div>
+  <div class="wide xl"><div id="chart-sl-801150" class="chart-frame"></div></div>
+  <div class="wide" id="verdict-pharma"><div id="verdict-chart-pharma" class="chart-frame"></div></div>
+  <div class="prose">
+    <blockquote class="quote-card">
+      <p class="q-text">政策是点火器,创新药出海才是燃料。</p>
+      <p class="q-who">— <b>界面新闻</b>,《从医保谈判到万亿市值:创新药的黄金时代是如何炼成的》,2026-07-07</p>
+      <div class="q-why"><span class="q-lab">背景</span>2021 年 BD 首付仅 5 亿美元,2025 年达 70 亿美元、交易额占全球 49%。
+        <span class="q-lab why">为何重要</span>BD 出海与支付双轨是 2020-21 不存在的基本面变量——本轮修复的驱动质量高于上轮抱团牛。</div>
+    </blockquote>
+  </div>
+  <div class="wide xl" id="table-pharma"><div id="table-companies-pharma" class="tbl-host"></div></div>
+</section>
+
+<!-- ═══ §8 汽车整车 ═══ -->
+<section id="sec-auto" class="band" data-win="auto">
+  <div class="prose">
+    <p class="sec-no">§8 · 深潜 ⑥ 汽车整车 <span class="stage-badge obs">BOTTOM_OBSERVATION · 暂定</span></p>
+    <h2>汽车:政策底已现、需求断崖未止——映射 2018 末-2019 初的最深段</h2>
+    <p class="dek">反内卷 + 购置税减半截止构成政策底,但 4-6 月零售 -10%~-21.3% 比 2018 年同期更深;8-9 月同比降幅能否收窄至 -10% 以内是右侧第一信号。</p>
+    <p>4-6 月乘用车零售同比 -10%~-21.3%(6 月 -23.2%、160.2 万辆)——需求断崖比 2018 年退坡期更深;经销商综合库存系数 1.58(6 月),库存预警指数连续 12 个月在枯荣线上——渠道仍在承压;1-5 月降价 113 款仍超 2024 全年——价格战烈度未实质降温。出口 +82.3%(6 月 87.7 万辆,NEV 占 57%)为第二曲线;力帆/众泰/华泰/猎豹出清队列为 2018-19 窗口的镜鉴。</p>
+    <div class="subnav">
+      <a href="#sec-company">公司层总览 →</a><a href="#chart-sl-801880">汽车指数 12 年</a><a href="#table-auto">公司表</a><a href="#verdict-auto">判定天平</a>
+    </div>
+  </div>
+  <div class="wide xl"><div id="chart-sl-801880" class="chart-frame"></div></div>
+  <div class="wide" id="verdict-auto"><div id="verdict-chart-auto" class="chart-frame"></div></div>
+  <div class="prose">
+    <blockquote class="quote-card">
+      <p class="q-text">4 月中国乘用车销量同比下跌 16.6%,自 2018 年 3 月起持续同比下滑。</p>
+      <p class="q-who">— <b>财新网</b>,2019-05-18</p>
+      <div class="q-why"><span class="q-lab">背景</span>2018-19 购置税退坡:乘用车连续 16 个月负增长,断崖持续约 5 个季度后收窄。
+        <span class="q-lab why">为何重要</span>退坡冲击的时长模板——本轮 2026Q2 已 -15%~-21%,按历史模板,收窄同样需要约 5 个季度。</div>
+    </blockquote>
+  </div>
+  <div class="wide xl" id="table-auto"><div id="table-companies-auto" class="tbl-host"></div></div>
+</section>
+
+<!-- ═══ §8.1-§8.7 新 A 层深潜(render-content.js 填充) ═══ -->
+<section id="sec-nonferrous" class="band" data-win="deep"></section>
+<section id="sec-defense" class="band" data-win="deep"></section>
+<section id="sec-nonbank" class="band" data-win="deep"></section>
+<section id="sec-machinery" class="band" data-win="deep"></section>
+<section id="sec-computer" class="band" data-win="deep"></section>
+<section id="sec-media" class="band" data-win="deep"></section>
+<section id="sec-chem" class="band" data-win="deep"></section>
+
+<!-- ═══ §8.8 行业公司矩阵(右侧公司 + 左侧观察名单) ═══ -->
+<section id="sec-matrix" class="band" data-win="matrix">
+  <div class="prose">
+    <p class="sec-no">§8.8 · 行业公司矩阵</p>
+    <h2>右侧行业的公司清单:龙头 / 高成长 / 高性价比,每张卡都带趋势状态与认输线</h2>
+    <p class="dek">只覆盖判定在右侧(或临近右侧)的行业;每家公司标注趋势状态(主升/高位震荡/回调修复/底部蓄势)、估值与 2026Q1 增速,并写明「逻辑成立需要看到什么、什么信号一出就证伪」。<b>证据特征陈列,不构成买卖建议。</b></p>
+    <p>临近拐点的五个行业(猪/白酒/化工/汽车/银行)给的是「左侧观察名单」——虚线框标注,它们还差确认族,不代表不能看,代表要用观察名单的纪律看。点击卡片展开完整钻取,全部数字溯源到对应 research.md / trend_state.md / 档案原文。</p>
+  </div>
+  <div class="wide xl"><div id="matrix-host"></div></div>
+</section>
+
+<!-- ═══ §8.9 全景档案(17 个 B 层行业) ═══ -->
+<section id="sec-dossier" class="band" data-win="dossier">
+  <div class="prose">
+    <p class="sec-no">§8.9 · 全景档案</p>
+    <h2>其余 17 个行业,每个一张档案卡:大白话三行 + 判定 + 还差什么 + 盯什么</h2>
+    <p class="dek">B 层行业不做全文深潜,但每个都过了一遍变量读数、阶段判定、缺失确认族与监测信号——煤炭本期上调半档、银行给息差观察、综合直接不评级。</p>
+  </div>
+  <div class="wide xl"><div id="dossier-host"></div></div>
+</section>
+
+<!-- ═══ §9 公司层总览 ═══ -->
+<section id="sec-company" class="band" data-win="company">
+  <div class="prose">
+    <p class="sec-no">§9 · 公司层总览</p>
+    <h2>估值分位的撕裂:AI 链 61.8%-97.5% 高位区 vs 茅台 3.1% 地板区</h2>
+    <p class="dek">估值语言由周期位置决定:右侧行业的高分位由盈利兑现支撑,左侧行业的低分位可能是价值陷阱——分位数本身不构成方向信号。</p>
+    <p>AI 算力链 PE 分位 61.8%-97.5% 全在高位区——盈利兑现速度决定能撑多久;茅台 3.1%、五粮液 42.1% 在地板区——但收现未确认前,低分位不自动修复。周期股分位系统性失真:兆易创新历史 PE 中枢 94 倍,其 65.8% 分位不代表便宜;洋河 PE 59 倍为利润坍塌致失真,未列入。高性价比区间 = 右侧盈利兑现层中分位相对温和者(如工业富联 83.3% 分位但 Q1 净利 +102.5%)。</p>
+  </div>
+  <div class="wide xl"><div id="valuation-chart" class="chart-frame"></div></div>
+  <div class="prose">
+    <div class="note-box">
+      <p><b>分位数使用纪律。</b>① 基期不一致(2016-2021 起算不一),横向比较需打折;② 周期股在盈利顶 PE 低、盈利底 PE 高,分位方向与成长股相反;③ 洋河式价值陷阱:低分位 + 批价/动销持续恶化时,盈利下修快于股价下跌,分位数失效;④ 所有分位数据截至 2026-07-17。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ §10 监测信号 ═══ -->
+<section id="sec-monitor" class="band" data-win="monitor">
+  <div class="prose">
+    <p class="sec-no">§10 · 监测信号</p>
+    <h2>观察信号仪表盘:18 个行业信号 + 5 个跨行业信号,阈值与证伪条件全列出</h2>
+    <p class="dek">每个阶段判定都配了可证伪的观察信号:阈值、预期时滞、证伪条件、来源与截止日齐全——信号转负即降级判定。</p>
+    <p>18 个行业信号:6 个 met、10 个 partial、2 个 missing——缺失读数(云厂 capex 明细、汽车零售拐点)恰是两大核心问题的答案钥匙;汽车占 2 个 missing,印证其最左侧位置。跨行业汇总 5 个:全 A 盈利加速(met)、沪深 300 调整性质(partial)、护盘资金(met)、外部风险(missing)、中报预喜率(partial)。</p>
+  </div>
+  <div class="wide xl"><div id="monitor-chart" class="chart-frame"></div></div>
+  <div class="wide xl"><div id="monitor-table"></div></div>
+</section>
+
+<!-- ═══ §11 类比与队列 ═══ -->
+<section id="sec-analogs" class="band" data-win="analogs">
+  <div class="prose">
+    <p class="sec-no">§11 · 历史类比与队列台账</p>
+    <h2>26 个选定窗口、6 个拒绝、5 个事后锚——每个窗口都过「当时可知」检验</h2>
+    <p class="dek">类比的价值在机制对照,不在行情暗示;队列台账 41 条是幸存者偏差的解毒剂。</p>
+    <p>主锚全部 contemporaneous / near_contemporaneous:2016-17 DRAM、2013-15 猪、2013-15 白酒、2012-13 光伏、2020-21 锂电/医药、2018-19 汽车。5 个 hindsight 窗口(2000 科网、2010-11 猪、1998-2003 白酒、2008-09 白酒、XBI 2012-15)仅作 different-case 对照或辅助锚,不单独支撑任何判定。拒绝案例:2013-15 移动互联网(机制不符)、2006-07 蓝耳病(闸门不过)、1989-91 禁酒(无载体)、2008-09 光伏 V 型(需求机制不同)、2020-21 疫苗主题(一次性脉冲)、「2018 后总量见顶」(假设非类比)。</p>
+  </div>
+  <div class="wide xl"><div id="destiny-chart" class="chart-frame"></div></div>
+  <div class="prose">
+    <blockquote class="quote-card">
+      <p class="q-text">由于库存水位过高,2018 年第四季 DRAM 价格已正式反转向下,2019 年 DRAM 产业将进入跌价周期。</p>
+      <p class="q-who">— <b>TrendForce</b>(via 搜狐科技),2018-12-18</p>
+      <div class="q-why"><span class="q-lab">背景</span>该宣言终结了连续九季上涨的存储超级周期,发表时 2019 年实际跌幅(-47%)尚未发生。
+        <span class="q-lab why">为何重要</span>「当时可知」证据的范本——阶段判定只允许引用发表时点可获得的信息。</div>
+    </blockquote>
+    <blockquote class="quote-card">
+      <p class="q-text">2017 年 DRAM 价格涨幅达 47%,为 1978 年以来最大年度涨幅。</p>
+      <p class="q-who">— <b>集邦咨询资深协理郭祚荣</b>(via 搜狐科技),2018-03-16</p>
+      <div class="q-why"><span class="q-lab">背景</span>2016H2-2017 寡头纪律供给周期的价格弹性峰值统计。
+        <span class="q-lab why">为何重要</span>本轮 DRAM 合约价 2026Q1 环比 +90~95% 的弹性参照系——价格环比拐点即周期顶信号。</div>
+    </blockquote>
+  </div>
+  <div class="wide xl"><div id="analog-list"></div></div>
+  <div class="wide xl"><div id="cohort-table"></div></div>
+</section>
+
+<!-- ═══ §12 局限性 ═══ -->
+<section id="sec-limits" class="band" data-win="limits">
+  <div class="prose">
+    <p class="sec-no">§12 · 局限性与免责声明</p>
+    <h2>11 处数据缺口全披露,宁可写缺口不编造</h2>
+    <p class="dek">本报告有 11 处明确缺口与口径冲突,全部在此披露;其中 2024Q1 全 A 盈利序列未能核实,已按缺口处理而非引用未证实数字。</p>
+    <div id="limits-list"></div>
+    <div class="note-box">
+      <p><b>口径冲突全部并列呈现。</b>勤策 vs Gildata 的五粮液 Q1 营收(271.6 亿 vs 265.9 亿)、冻品库存两说、碳酸锂高盛 5 月 6.5 万 vs 6 月 20 万预期——不做调和,并列展示。</p>
+      <p><b>叙事偏倚警示。</b>报告形成于 7/13-17 调整当周,下跌趋势中易放大悲观/乐观叙事,建议一周后复核全部阶段判定。</p>
+    </div>
+    <div class="note-box">
+      <p><b>免责声明。</b>本报告为周期重建研究,不提供买卖建议、不构成投资意见、不设价格目标。历史类比均为机制对照,不构成对未来的预测。数据截至 2026-07-17,后续数据可能改变阶段判定。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Sources footer ═══ -->
+<footer id="sec-sources">
+  <div class="prose">
+    <p class="sec-no">来源与方法</p>
+    <h2>方法、纪律与来源锚点表</h2>
+    <div class="note-box">
+      <p><b>证据分级。</b>T1 = 交易所/监管披露,T2 = 行业协会/权威数据库,T3 = 媒体转述;公司数据以 Gildata(交易所披露口径)为主,关键数字与媒体披露交叉验证。</p>
+      <p><b>来源四分类,每条带日期。</b> <span class="src-cat primary">一手/监管</span>
+        <span class="src-cat broker">券商研究</span> <span class="src-cat industry">行业/官方数据</span>
+        <span class="src-cat kimi">研究汇编</span></p>
+      <p><b>测量纪律。</b>旧数据闸门:凡引用历史窗口,必须重建当时可知的队列证据与序列证据;区间口径数字(如全 A 盈利 +5.0~7.9%)上下沿并列;缺口画成缺口,不插值、不隐藏。</p>
+    </div>
+  </div>
+  <div class="wide xl">
+    <div style="margin-top:26px">
+      <p class="chart-title">来源锚点表 · K1–K42</p>
+      <p class="chart-sub">站内每一个数字的钻取卡片都回溯到这张表 · K1-K32 为公开来源(含 URL),K33-K42 为本地数据集</p>
+    </div>
+    <div id="source-list"></div>
+  </div>
+  <div class="prose">
+    <p class="colophon"><b>璟隆研究 · JINGLONG RESEARCH 出品</b> · 交互研究版 · 编译日期 2026-07-18 · 数据截至 2026-07-17 · 本报告不提供投资建议 · 方法:industry-cycle 五阶段判定 + 双案例纪律 + 旧数据闸门</p>
+  </div>
+</footer>
+
+</main>
+
+<!-- 右栏常驻仪表盘(CHARTS.md P14) -->
+<aside id="dash-rail" aria-label="周期仪表盘"><canvas id="dash-canvas"></canvas></aside>
+
+<!-- 钻取卡片(CHARTS.md P16) -->
+<div id="drill-card" hidden></div>
+
+<script src="js/data.js"></script>
+<script src="js/content.js"></script>
+<script src="js/sources.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/cover.js"></script>
+<script src="js/cover-exploded.js"></script>
+<script src="js/cover-wire.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/chart-evidence.js"></script>
+<script src="js/chart-profit.js"></script>
+<script src="js/chart-adjust.js"></script>
+<script src="js/chart-map.js"></script>
+<script src="js/chart-sw31.js"></script>
+<script src="js/chart-stockline.js"></script>
+<script src="js/chart-verdict.js"></script>
+<script src="js/chart-valuation.js"></script>
+<script src="js/chart-monitor.js"></script>
+<script src="js/chart-destiny.js"></script>
+<script src="js/render-content.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{'type': 'text', 'text': '{\\n  \"is_success\": \"wind, Wind get_index_fundamentals fetched successfully\",\\n  \"data_preview\": \"Wind代码,证券简称,最新市盈率,最新市净率\\\\n801010.SI,农林牧渔(申万),38.68,2.13\\\\n\",\\n  \"notice\": \"All the data have been provided and can be used directly. And above table saved to /Users/jinglong/.cache/wind-allskill/csv/wind_get_index_fundamentals_3063_1784342840555.csv.If the user has the need for analysis, you can use pandas to read the file.\"\\n}'}"
+    }
+  ],
+  "isError": false
+}
