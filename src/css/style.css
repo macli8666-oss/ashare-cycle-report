@@ -756,3 +756,64 @@ ul.ds-mon li:hover .ds-mon-l { color: var(--red); }
 .ds-leader b { color: var(--ink); }
 .ds-ref { font-size: 12.5px; line-height: 1.55; color: var(--ink-md); margin: 0; }
 .ds-foot { font-family: var(--mono); font-size: 9.5px; color: var(--ink-lo); margin: 12px 0 0; border-top: 1px solid var(--line-lo); padding-top: 8px; }
+
+/* ── 个股推荐池 ── */
+.pl-strip { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 6px; }
+.pl-chip {
+  display: inline-flex; align-items: center; gap: 7px; text-decoration: none;
+  border: 1px solid var(--line); border-radius: 999px; padding: 5px 12px;
+  background: var(--paper); font-size: 12.5px; color: var(--ink);
+  transition: border-color .15s, box-shadow .15s;
+}
+.pl-chip:hover { border-color: var(--red); box-shadow: var(--shadow); }
+.pl-chip-n { font-family: var(--mono); font-size: 12px; }
+.pl-chip.pl-red .pl-chip-n { color: var(--neg); }
+.pl-chip.pl-orange .pl-chip-n { color: #c25a10; }
+.pl-chip.pl-green .pl-chip-n { color: var(--green); }
+.pl-chip.pl-yellow .pl-chip-n { color: var(--copper); }
+.pl-chip.pl-blue .pl-chip-n { color: var(--red); }
+.pl-chip.pl-gray .pl-chip-n { color: var(--ink-lo); }
+.pl-asof { font-family: var(--mono); font-size: 10.5px; color: var(--ink-lo); margin: 0 0 18px; }
+.pl-bucket { margin: 0 0 26px; scroll-margin-top: 70px; }
+.pl-b-t { font-size: 17px; margin: 0 0 4px; }
+.pl-b-n { font-family: var(--mono); font-size: 12px; color: var(--ink-md); font-weight: 400; }
+.pl-b-d { font-size: 13px; color: var(--ink-md); margin: 0 0 12px; }
+.pl-empty {
+  border: 1px dashed var(--line); border-radius: 8px; padding: 14px 16px;
+  font-size: 13px; color: var(--ink-lo); background: var(--paper-hi); margin: 0;
+}
+.pl-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.pl-card {
+  border: 1px solid var(--line); border-left-width: 3px; border-radius: 8px;
+  padding: 12px 14px 11px; background: var(--paper);
+}
+.pl-card.pl-red { border-left-color: var(--neg); }
+.pl-card.pl-orange { border-left-color: #c25a10; }
+.pl-card.pl-green { border-left-color: var(--green); }
+.pl-card.pl-yellow { border-left-color: var(--copper); }
+.pl-card.pl-blue { border-left-color: var(--red); }
+.pl-card.pl-gray { border-left-color: var(--ink-lo); }
+.pl-card-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 5px; }
+.pl-name { font-weight: 700; font-size: 15px; margin: 0; }
+.pl-name .pl-code { font-family: var(--mono); font-size: 10px; font-weight: 400; color: var(--ink-lo); }
+.pl-ind { font-family: var(--mono); font-size: 10px; color: var(--ink-lo); margin: 0; white-space: nowrap; }
+.pl-tags { margin: 0 0 8px; display: flex; flex-wrap: wrap; gap: 5px; }
+.pl-role, .pl-trend {
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: .06em;
+  border: 1px solid var(--line); border-radius: 4px; padding: 2px 6px; color: var(--ink-md);
+  background: var(--paper-hi);
+}
+.pl-metrics { width: 100%; border-collapse: collapse; margin: 0 0 8px; }
+.pl-metrics td { font-family: var(--mono); font-size: 10.5px; padding: 2.5px 0; font-variant-numeric: tabular-nums; }
+.pl-metrics td.k { color: var(--ink-lo); width: 21%; }
+.pl-metrics td.v { color: var(--ink); width: 29%; }
+.pl-q1 { font-size: 12px; line-height: 1.5; color: var(--ink-md); margin: 0 0 6px; }
+.pl-q1.dim { color: var(--ink-lo); }
+.pl-cond, .pl-veto { font-size: 11.5px; line-height: 1.45; color: var(--ink-lo); margin: 0 0 3px; }
+.pl-veto { color: var(--neg); }
+.pl-more { margin-top: 10px; }
+.pl-more summary {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em;
+  color: var(--red); cursor: pointer; padding: 4px 0;
+}
+.pl-more .pl-grid { margin-top: 10px; }

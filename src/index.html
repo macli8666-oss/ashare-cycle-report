@@ -37,6 +37,7 @@
       </div>
     </div>
     <div class="tn-item"><a href="#sec-matrix" data-nav="sec-matrix">公司矩阵</a></div>
+    <div class="tn-item"><a href="#sec-pool" data-nav="sec-pool">个股推荐池</a></div>
     <div class="tn-item"><a href="#sec-dossier" data-nav="sec-dossier">全景档案</a></div>
     <div class="tn-item"><a href="#sec-monitor" data-nav="sec-monitor">监测</a></div>
     <div class="tn-item"><a href="#sec-sources" data-nav="sec-sources">来源</a></div>
@@ -336,6 +337,22 @@
   <div class="wide xl"><div id="matrix-host"></div></div>
 </section>
 
+<!-- ═══ §8.85 个股推荐池(五桶分类) ═══ -->
+<section id="sec-pool" class="band" data-win="pool">
+  <div class="prose">
+    <p class="sec-no">§8.85 · 个股推荐池</p>
+    <h2>94 家公司按五桶分好:超跌观察 / 底部蓄势 / 右侧确认 / 主升中段 / 尾声预警</h2>
+    <p class="dek">覆盖 13 个深潜行业 + 银行/煤炭共 16 个行业的 94 家代表公司,用统一口径(不复权日K)算出每只票相对 52 周高低点、MA20/60/120、20/60 日涨幅与量比的位置,再叠上行业档位与 2026Q1 业绩,归入五个桶。桶内排序 = 距离下一个触发信号最近的排最前。</p>
+    <p>用法:想找<b>可能快速上升</b>的,看 🟡 底部蓄势前列(离收复 MA60 最近)和 🟢 右侧确认(行业与价格同向);想找<b>超跌反弹候选</b>,看 🔵 超跌观察前列(离站回 MA20 最近);🟠 主升中段是趋势仍在但已不便宜的;🔴 尾声预警是动能破坏、按纪律处理的。每只票都写了「逻辑成立需要看到什么、什么信号一出就证伪」——<b>按成立条件等信号,按证伪线认输出局,不预测点位。</b></p>
+  </div>
+  <div class="wide xl"><div id="pool-host"></div></div>
+  <div class="prose">
+    <div class="note-box">
+      <p><b>分桶规则(全部可复核)。</b>🔵 超跌观察 = 距 52 周高点跌超 30% 且仍未止跌(MA20 下方或 20 日涨幅为负);🟡 底部蓄势 = 距高点跌超 25% 且重新站上 MA20、缩量或 20 日转正;🟢 右侧确认 = 行业档位≥3(右侧行业)且站上 MA60 且 2026Q1 营收或利润正增长;🟠 主升中段 = 站上 MA60、距高点 15% 以内、60 日涨幅超 10%;🔴 尾声预警 = 距高点 15% 以内但 20 日跌超 8% 且跌破 MA20。条件优先级 红&gt;橙&gt;绿&gt;黄&gt;蓝,都不满足归 ⚪ 过渡观察。成立条件/证伪线:46 家深潜公司复用原报告原文,其余按统一模板生成(引用具体均线与 52 周低点价位)。</p>
+    </div>
+  </div>
+</section>
+
 <!-- ═══ §8.9 全景档案(17 个 B 层行业) ═══ -->
 <section id="sec-dossier" class="band" data-win="dossier">
   <div class="prose">
@@ -453,6 +470,7 @@
 
 <script src="js/data.js"></script>
 <script src="js/content.js"></script>
+<script src="js/pool-data.js"></script>
 <script src="js/sources.js"></script>
 <script src="js/utils.js"></script>
 <script src="js/cover.js"></script>
@@ -470,6 +488,7 @@
 <script src="js/chart-monitor.js"></script>
 <script src="js/chart-destiny.js"></script>
 <script src="js/render-content.js"></script>
+<script src="js/pool.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
