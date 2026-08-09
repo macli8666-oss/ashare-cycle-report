@@ -4,3 +4,4 @@ dist-single.html
 __pycache__/
 .DS_Store
 research/data/*.log
+research/data/stock_pool/pool-data.prev.js
