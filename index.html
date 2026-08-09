@@ -850,6 +850,7 @@ ul.ds-mon li:hover .ds-mon-l { color: var(--red); }
   color: var(--red); cursor: pointer; padding: 4px 0;
 }
 .pl-more .pl-grid { margin-top: 10px; }
+.pl-trigger { font-family: var(--mono); font-size: 11px; color: var(--red); margin: 0 0 6px; font-variant-numeric: tabular-nums; }
 
 </style>
 </head>
@@ -5045,6 +5046,13 @@ window.COVER_X = (() => {
       tb.appendChild(tr);
     });
     c.appendChild(tb);
+
+    const trig = { blue: "触发价 MA20", yellow: "触发价 MA60", green: "离场线 MA60",
+                   orange: "离场线 MA20", red: "解除线 MA20" }[s.bucket];
+    const trigPx = { blue: m.ma20, yellow: m.ma60, green: m.ma60,
+                     orange: m.ma20, red: m.ma20 }[s.bucket];
+    if (trig && trigPx != null)
+      c.appendChild(el("p", "pl-trigger", `${trig}：${trigPx} 元（距52周高 ${pct(m.dist_hi)}）`));
 
     if (s.q1) c.appendChild(el("p", "pl-q1", clip(s.q1, 60)));
     else c.appendChild(el("p", "pl-q1 dim", "2026Q1 财务速览未收录（不在原深潜名单内）"));

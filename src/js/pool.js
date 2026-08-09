@@ -61,6 +61,13 @@
     });
     c.appendChild(tb);
 
+    const trig = { blue: "触发价 MA20", yellow: "触发价 MA60", green: "离场线 MA60",
+                   orange: "离场线 MA20", red: "解除线 MA20" }[s.bucket];
+    const trigPx = { blue: m.ma20, yellow: m.ma60, green: m.ma60,
+                     orange: m.ma20, red: m.ma20 }[s.bucket];
+    if (trig && trigPx != null)
+      c.appendChild(el("p", "pl-trigger", `${trig}：${trigPx} 元（距52周高 ${pct(m.dist_hi)}）`));
+
     if (s.q1) c.appendChild(el("p", "pl-q1", clip(s.q1, 60)));
     else c.appendChild(el("p", "pl-q1 dim", "2026Q1 财务速览未收录（不在原深潜名单内）"));
     c.appendChild(el("p", "pl-cond", "成立:" + clip(s.cond, 64)));

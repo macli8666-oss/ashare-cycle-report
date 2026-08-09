@@ -817,3 +817,4 @@ ul.ds-mon li:hover .ds-mon-l { color: var(--red); }
   color: var(--red); cursor: pointer; padding: 4px 0;
 }
 .pl-more .pl-grid { margin-top: 10px; }
+.pl-trigger { font-family: var(--mono); font-size: 11px; color: var(--red); margin: 0 0 6px; font-variant-numeric: tabular-nums; }
