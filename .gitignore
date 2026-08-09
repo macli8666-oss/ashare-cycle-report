@@ -5,3 +5,4 @@ __pycache__/
 .DS_Store
 research/data/*.log
 research/data/stock_pool/pool-data.prev.js
+research/data/watch_state.json
