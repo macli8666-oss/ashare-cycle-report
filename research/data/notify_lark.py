@@ -56,22 +56,28 @@ def main():
                 pushstat = line; break
 
     pct = lambda v: ("+" if v > 0 else "") + f"{v:.1f}%"
+    dh = lambda s: pct(s["m"]["dist_hi"])  # 距52周高点回撤
     elements = [
         md_div(f"数据截至 **{cur['as_of']}** 收盘 · 共 {total} 家\n{dist}"),
         {"tag": "hr"},
-        md_div(f"**🟠 主升中段（{counts['orange']}）**　趋势仍在、已不便宜\n{name_list(by.get('orange', []), fmt=lambda s: '60日' + pct(s['m']['r60']))}"),
-        md_div(f"**🟢 右侧确认（{counts['green']}）**　行业+价格+业绩同向\n{name_list(by.get('green', []), fmt=lambda s: '20日' + pct(s['m']['r20']))}"),
+        md_div(f"**🟠 主升中段（{counts['orange']}）**　趋势仍在、已不便宜（回撤｜60日涨幅｜离场线）\n" +
+               name_list(by.get("orange", []),
+                         fmt=lambda s: f"{dh(s)}｜60日{pct(s['m']['r60'])}｜MA20 {s['m']['ma20']}元")),
+        md_div(f"**🟢 右侧确认（{counts['green']}）**　行业+价格+业绩同向（回撤｜20日涨幅｜离场线）\n" +
+               name_list(by.get("green", []),
+                         fmt=lambda s: f"{dh(s)}｜20日{pct(s['m']['r20'])}｜MA60 {s['m']['ma60']}元")),
         {"tag": "hr"},
-        md_div("**🟡 底部蓄势 · 最接近收复 MA60 的 5 家**（差值=现价距MA60）\n" +
-               name_list(by.get("yellow", [])[:5],
-                         fmt=lambda s: f"差{(s['m']['close']/s['m']['ma60']-1)*100:.1f}%") if by.get("yellow") else "（无）"),
-        md_div("**🔵 超跌观察 · 最接近站回 MA20 的 5 家**（不接飞刀，只等信号）\n" +
-               name_list(by.get("blue", [])[:5],
-                         fmt=lambda s: f"差{(s['m']['close']/s['m']['ma20']-1)*100:.1f}%") if by.get("blue") else "（无）"),
+        md_div("**🟡 底部蓄势 · 最接近收复 MA60 的 5 家**（回撤｜触发价=MA60）\n" +
+               (name_list(by.get("yellow", [])[:5],
+                          fmt=lambda s: f"{dh(s)}｜{s['m']['ma60']}元") if by.get("yellow") else "（无）")),
+        md_div("**🔵 超跌观察 · 最接近站回 MA20 的 5 家**（不接飞刀，只等信号｜触发价=MA20）\n" +
+               (name_list(by.get("blue", [])[:5],
+                          fmt=lambda s: f"{dh(s)}｜{s['m']['ma20']}元") if by.get("blue") else "（无）")),
     ]
     if counts["red"]:
-        elements.insert(2, md_div("**🔴 尾声预警（动能破坏，按纪律处理）**\n" +
-                                  name_list(by.get("red", []), fmt=lambda s: '20日' + pct(s['m']['r20']))))
+        elements.insert(2, md_div("**🔴 尾声预警（动能破坏，按纪律处理｜解除线=MA20）**\n" +
+                                  name_list(by.get("red", []),
+                                            fmt=lambda s: f"{dh(s)}｜{s['m']['ma20']}元")))
         elements.insert(3, {"tag": "hr"})
     if migs:
         lines = [f"**🔄 本周迁移（{len(migs)} 家）**"]
