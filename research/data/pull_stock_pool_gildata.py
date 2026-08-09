@@ -68,12 +68,13 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--start", type=int, default=0)
     ap.add_argument("--limit", type=int, default=len(U))
+    ap.add_argument("--refresh", action="store_true", help="忽略已有文件重新拉取")
     a = ap.parse_args()
     fails = []
     for code, name, ind in U[a.start:a.start + a.limit]:
         dst_k = os.path.join(OUT, "kline", f"{code}.csv")
         dst_q = os.path.join(OUT, "quote", f"{code}.csv")
-        if os.path.exists(dst_k):
+        if os.path.exists(dst_k) and not a.refresh:
             continue
         tmp = f"/tmp/gildata_pool_{code.replace('.', '_')}.csv"
         seg = "港股" if code.endswith(".HK") else ""

@@ -95,22 +95,24 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--start", type=int, default=0)
     ap.add_argument("--limit", type=int, default=len(U))
+    ap.add_argument("--end", default="20260807", help="K线截止日 yyyyMMdd")
+    ap.add_argument("--refresh", action="store_true", help="忽略已有文件重新拉取")
     a = ap.parse_args()
     subset = U[a.start:a.start + a.limit]
     fails = []
     for code, name, ind in subset:
         dst_k = os.path.join(OUT, "kline", f"{code}.csv")
         dst_q = os.path.join(OUT, "quote", f"{code}.csv")
-        if not os.path.exists(dst_k):
+        if a.refresh or not os.path.exists(dst_k):
             out, csvpath = call("stock_data", "get_stock_kline",
-                                {"windcode": code, "begin_date": "20250102", "end_date": "20260807"})
+                                {"windcode": code, "begin_date": "20250102", "end_date": a.end})
             if csvpath:
                 os.rename(csvpath, dst_k)
                 print(f"{code} {name} kline OK", flush=True)
             else:
                 fails.append((code, name, "kline", out[-200:]))
                 print(f"{code} {name} kline FAIL", flush=True)
-        if not os.path.exists(dst_q):
+        if a.refresh or not os.path.exists(dst_q):
             out, csvpath = call("stock_data", "get_stock_price_indicators",
                                 {"windcode": code, "indexes": "中文简称,最新成交价,市盈率(TTM),市净率,总市值1"})
             if csvpath:
