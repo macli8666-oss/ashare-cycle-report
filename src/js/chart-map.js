@@ -7,7 +7,7 @@
   const body = U.frame(host, {
     title: "10 个行业的指针已摆进上升象限,10 个贴着底部观察区——上升周期是结构性的",
     sub: "31 GAUGES · 指针 = 五阶段判定 · 中心数 = 2026Q1 营收同比 · 底条 = YTD 涨跌幅 · 点击仪表盘进入对应深潜章节/档案卡",
-    src: "K33 · industry_master.csv(申万/Wind,2026-07-17 收盘)+ 31 行业阶段扫描底稿(P1)",
+    src: "K33 · industry_master.csv(申万/Wind,2026-08-07 收盘)+ 31 行业阶段扫描底稿(P1)",
   });
 
   const ZONES = ["盈利承压", "出清中", "底部观察", "复苏初期", "再扩张"];
@@ -139,7 +139,7 @@
       title: `${d.name}（${d.code}）· 阶段判定`,
       value: d.zone == null ? "不评级" : ZONES[Math.round(U.clamp(d.zone, 0, 4))],
       sub: `判定原文:${d.stage_label} · YTD ${d.ytd}% · 近 20 日 ${d.r20}% · 区间位置 ${d.range_pos}% · PE ${d.pe} / PB ${d.pb} · 2026Q1 营收 ${d.rev_q1 == null ? "—" : d.rev_q1 + "%"} · 毛利率同比 ${d.gm_delta == null ? "—" : d.gm_delta + "pt"}`,
-      source: "K33 · industry_master.csv(2026-07-17)+ K34 · 31 行业扫描底稿(暂定口径)",
+      source: "K33 · industry_master.csv(2026-08-07)+ K34 · 31 行业扫描底稿(暂定口径)",
       x: e.clientX, y: e.clientY,
     });
   });

@@ -8,7 +8,7 @@
   const body = U.frame(host, {
     title: "因果地平:哪个信号离结果最近、离阈值最远、缺席的是哪块拼图",
     sub: "CAUSAL HORIZON · 横轴 = 预期领先月数(左=领先大,右=同步)· 纵带 = 因果层 · 实环 = met · 半环 = partial · 红虚环+? = missing · 点击节点看阈值与证伪",
-    src: "六行业深潜研究§7 + 31 行业扫描(2026-07-17/18)· table_monitoring_dashboard + p12 跨行业信号",
+    src: "六行业深潜研究§7 + 31 行业扫描(读数更新至 2026-08-07)· table_monitoring_dashboard + p12 跨行业信号",
   });
 
   // lead months parsed from expected_lag(见各信号原文,确定性映射)

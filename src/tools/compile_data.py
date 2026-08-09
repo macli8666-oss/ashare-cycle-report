@@ -4,8 +4,8 @@
 No invented numbers: everything traces to the fact package."""
 import json, os, re
 
-BASE = "/Users/jinglong/Documents/kimi/workspace/industry-cycle-output-ashare-2026-07-18"
-OUT = "/Users/jinglong/Documents/kimi/workspace/ashare-cycle-site/js"
+BASE = "/Users/mac/Documents/Kimi/Workspaces/股票/ashare-cycle-report/research"
+OUT = "/Users/mac/Documents/Kimi/Workspaces/股票/ashare-cycle-report/src/js"
 
 r = json.load(open(os.path.join(BASE, "cycle_report.json"), encoding="utf-8"))
 
@@ -130,9 +130,10 @@ for i, s in enumerate(r["run"]["search_manifest"]):
     SRC.append({"k": f"K{i+1}", "title": s["title"], "url": s["url"],
                 "type": s["source_type"], "date": s.get("date", "")})
 local_sets = [
-    ("industry_master.csv · 申万/Wind 31行业量化总表（2026-07-17收盘）", "data/industry_master.csv", "primary", "2026-07-17"),
+    ("industry_master.csv · 申万/Wind 31行业量化总表（2026-08-07收盘）", "data/industry_master.csv", "primary", "2026-08-07"),
     ("industry_scan_stages.md · 31行业四象限阶段定位扫描底稿", "data/industry_scan_stages.md", "primary", "2026-07-17"),
-    ("sw_daily_long/*.SI.csv · Wind长周期日线本地序列（2014-01-02至2026-07-17，每指数3048个交易日）", "data/sw_daily_long/", "primary", "2026-07-17"),
+    ("sw_daily_long/*.SI.csv · Wind长周期日线本地序列（2014-01-02至2026-08-07，每指数3063个交易日）", "data/sw_daily_long/", "primary", "2026-08-07"),
+    ("update_20260807/*.csv · Wind增量行情与估值（2026-07-18至08-07，本次更新）", "data/update_20260807/", "primary", "2026-08-07"),
     ("deepdive/ai-compute/research.md + companies_summary.csv · AI算力链深潜（Gildata）", "data/deepdive/ai-compute/", "primary", "2026-07-18"),
     ("deepdive/hog-cycle/research.md + company_layer_2026.csv · 猪周期深潜", "data/deepdive/hog-cycle/", "primary", "2026-07-18"),
     ("deepdive/baijiu/research.md · 白酒深潜（Gildata估值+自算PE序列）", "data/deepdive/baijiu/", "primary", "2026-07-18"),

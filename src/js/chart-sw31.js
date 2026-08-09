@@ -8,7 +8,7 @@
   const body = U.frame(host, {
     title: C.title,
     sub: "PAIRED BARS · 墨条 = YTD 涨跌幅 · 蓝条 = 2026Q1 营收同比 · 按营收降序 · 蓝高墨低 = 背离候选 · 点击任一条钻取",
-    src: "K33 · industry_master.csv(申万/Wind,2026-07-17 收盘)",
+    src: "K33 · industry_master.csv(申万/Wind,2026-08-07 收盘)",
   });
 
   const rows = RPT.industries
@@ -100,7 +100,7 @@
       title: `${r.name}（${r.code}）· 股价 × 基本面`,
       value: `YTD ${r.ytd > 0 ? "+" : ""}${r.ytd}% / Q1 营收 ${r.rev == null ? "缺口" : (r.rev > 0 ? "+" : "") + r.rev + "%"}`,
       sub: `阶段判定:${r.stage} · YTD 为日度行情快照、营收为季度财务,频率不同已并列注明`,
-      source: "K33 · industry_master.csv(2026-07-17 收盘;财务 2026Q1)",
+      source: "K33 · industry_master.csv(2026-08-07 收盘;财务 2026Q1)",
       x: e.clientX, y: e.clientY,
     });
   });

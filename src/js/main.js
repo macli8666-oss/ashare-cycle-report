@@ -97,7 +97,7 @@
 
   // ── §2 sw31 table ──
   dtTable("#sw31-table", R.tables.table_sw31_master, {
-    sub: "31 个申万一级行业 · 阶段判定全部为扫描框架「暂定」口径 · 2026-07-17 收盘",
+    sub: "31 个申万一级行业 · 阶段判定全部为扫描框架「暂定」口径 · 2026-08-07 收盘",
     hl: r => ["电子", "通信", "电力设备", "医药生物", "农林牧渔", "食品饮料", "汽车"].includes(r[0]),
     cell: (td, c, ci, r) => {
       td.textContent = c == null ? "—" : String(c);
@@ -105,8 +105,8 @@
       if (ci === 3 && typeof c === "number") {
         td.innerHTML = ""; td.appendChild(kn(c.toFixed(1) + "%", {
           title: r[0] + " · YTD 涨跌幅", value: c.toFixed(1) + "%",
-          sub: `2026-01-01 至 2026-07-17 收盘;近 20 日 ${r[4]}%;2023 以来区间位置 ${r[5]}%`,
-          source: "K33 · industry_master.csv（申万/Wind,2026-07-17）",
+          sub: `2026-01-01 至 2026-08-07 收盘;近 20 日 ${r[4]}%;2023 以来区间位置 ${r[5]}%`,
+          source: "K33 · industry_master.csv（申万/Wind,2026-08-07）",
         }, c < 0));
       }
       if (ci === 8 && typeof c === "number") {
@@ -115,14 +115,14 @@
           td.appendChild(kn("—*", {
             title: r[0] + " · 2026Q1 营收同比", value: "缺口",
             sub: "该数字为扫描口径估算(约 +7.59%),未经旧数据闸门核实,按缺口处理不引用为事实",
-            source: "K33 · industry_master.csv（2026Q1 财务,2026-07-17）",
+            source: "K33 · industry_master.csv（2026Q1 财务,2026-08-07）",
           }, false));
           return;
         }
         td.appendChild(kn((c > 0 ? "+" : "") + c.toFixed(1) + "%", {
           title: r[0] + " · 2026Q1 营收同比", value: (c > 0 ? "+" : "") + c.toFixed(1) + "%",
           sub: `阶段判定:${r[2]} · 2026Q1 毛利率同比变动 ${r[9]}pt`,
-          source: "K33 · industry_master.csv（2026Q1 财务,2026-07-17）",
+          source: "K33 · industry_master.csv（2026Q1 财务,2026-08-07）",
         }, c < 0));
       }
     },
@@ -183,7 +183,7 @@
       }
       if (ci === 3 || ci === 4) td.style.maxWidth = "260px";
     },
-    note: "跨行业 5 信号(全 A 盈利/调整性质/护盘资金/外部风险/中报预喜率)见上图 causal horizon 右簇;来源:六行业深潜研究§7 + 31 行业扫描(2026-07-17/18)。",
+    note: "跨行业 5 信号(全 A 盈利/调整性质/护盘资金/外部风险/中报预喜率)见上图 causal horizon 右簇;来源:六行业深潜研究§7 + 31 行业扫描(读数更新至 2026-08-07)。",
   });
 
   // ── cohort table ──

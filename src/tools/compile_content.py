@@ -6,8 +6,8 @@ Parses: 7 new deepdive research.md (§0/§6/§7/§8), 6 trend_state.md (§0/tren
 No invented numbers: every extracted field traces to a source file (path recorded)."""
 import json, os, re, sys
 
-BASE = "/Users/jinglong/Documents/kimi/workspace/industry-cycle-output-ashare-2026-07-18/data"
-OUT = "/Users/jinglong/Documents/kimi/workspace/ashare-cycle-site/js"
+BASE = "/Users/mac/Documents/Kimi/Workspaces/股票/ashare-cycle-report/research/data"
+OUT = "/Users/mac/Documents/Kimi/Workspaces/股票/ashare-cycle-report/src/js"
 
 def read(p):
     return open(os.path.join(BASE, p), encoding="utf-8").read()

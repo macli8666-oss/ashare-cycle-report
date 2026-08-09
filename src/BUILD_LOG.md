@@ -84,3 +84,25 @@
 - 银行 Q1 营收维持缺口处理「—*」；综合（801230）维持不评级空心盘。
 - 深潜导航二级菜单只分「右侧进行中/临近拐点」两组：13 个 A 层行业无「出清中段」判定
   （出清中段行业全部在 B 层档案），故不设第三组。
+
+## 2026-08-09 例行数据复核（数据截至 2026-08-07）
+- 行情/估值：Wind 增量拉取 31 申万指数+沪深300（20260718→20260807，kline+估值快照，
+  快照缺口 6 个指数用 get_index_fundamentals 补齐）；并入 sw_daily 后按 07-17 旧快照反推校验
+  公式 31/31 全对，重写 industry_master/price_features/valuation（财务列保持 2026Q1 旧值）。
+  脚本：research/data/pull_wind_update.py、recompute_features.py；增量存 data/update_20260807/。
+- 信号：26 条监测信号全部重评（网络检索+Wind 新闻，EDB 权限不足不可用）。
+  状态变动 2 条：云厂 capex missing→met（Q2 财报季四大云厂 2026 指引全线上修，合计约
+  7200-7500 亿美元）；乘用车零售 missing→partial（7 月 -18% 较 6 月收窄但触及降级预警线，
+  8-9 月持续 ≤-15% 则触发降级）。无正式升降档：汽车预警待 8-9 月数据、茅台升级线未满
+  2 个月、能繁红线未破（3780 万头，差 30 万头）。
+- cycle_report.json：subtitle/run.as_of→2026-08-07；监测表 18 行、sw31 表 31 行、
+  p12 信号格 5 条、6 张行业页信号格、7 张 stockline 图表延长 15 个交易日（3048→3063 行，
+  逐图断言 7/17 收盘对齐后追加）；stage_map YTD 序列同步；assumptions 猪周期口径 154→30 万头；
+  5 处行业页核心论断刷新。脚本：research/data/apply_update_20260807.py。
+- cycle_brief.md 全面同步；三张大白话卡片（hog/baijiu/ai-compute trend_state.md §0）
+  以「8/7 更新」注记刷新现状；compile_data.py / compile_content.py 的 BASE/OUT 改为本机仓库路径。
+- 打包：bundle.py → dist-single.html 1,090,101 bytes → 根目录 index.html；
+  HTTP 冒烟验证 shell/data.js/content.js 新读数全部生效。深潜 research.md 正文保留初版口径
+  （各节自带日期标注），公司层表格仍为 Gildata 2026-07-17 收盘未刷新。
+- 下一观察窗口：8/10-16（7 月电池销量、经销商库存系数）、8 月下旬（正式中报）、
+  9 月上旬（8 月乘用车零售 → 汽车降级判定）。

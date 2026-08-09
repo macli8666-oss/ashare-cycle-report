@@ -121,7 +121,7 @@
       hits.push({ x: gx - gr - 10, y: gy - gr - 10, w: gr * 2 + 20, h: gr * 2 + 46, drill: {
         title: W.ind + " · 阶段判定", value: STAGES[Math.round(U.clamp(W.zone, 0, 4))],
         sub: "判定原文:" + ((IND[W.ind] || {}).stage_label || "") + " · 与 §2 仪表盘墙同源",
-        source: "K33 · industry_master.csv(2026-07-17)" } });
+        source: "K33 · industry_master.csv(2026-08-07)" } });
     } else {
       // market gauge: needle just inside the rising zone (~21/31 of the sweep)
       const a = zA(2.71);
@@ -169,7 +169,7 @@
     const rv = RPT.stocklines[W.curve].series.slice(-1)[0][1].toLocaleString("en-US", { maximumFractionDigits: 0 });
     ctx.strokeText(rv, cx0 + cw, cy0 + 14); ctx.fillText(rv, cx0 + cw, cy0 + 14);
     ctx.font = `8px ${F.mono}`; ctx.fillStyle = PAL.inkLo;
-    ctx.fillText(W.curLab + " · 2026-07-17", cx0 + cw, cy0 + 26);
+    ctx.fillText(W.curLab + " · 2026-08-07", cx0 + cw, cy0 + 26);
     hits.push({ x: cx0, y: cy0, w: cw, h: ch, drill: {
       title: W.curLab, value: rv,
       sub: "近三年日线半调点阵(72 点重采样);完整 12 年序列与事件见正文 stockline 图。",
@@ -191,7 +191,7 @@
       hits.push({ x: bx, y: by, w: bw, h: 52, drill: {
         title: W.t + " · " + s[0], value: s[1],
         sub: "该读数的完整口径与证伪条件见正文对应章节与 §10 监测台账。",
-        source: "cycle_report.json(2026-07-17/18)· 逐章溯源" } });
+        source: "cycle_report.json(2026-08-07)· 逐章溯源" } });
     });
     y += 134;
 
@@ -226,7 +226,7 @@
 
     // footer
     ctx.font = `7.5px ${F.mono}`; ctx.fillStyle = PAL.inkLo;
-    ctx.fillText("数据截至 2026-07-17 · 不提供买卖建议 · 点击任意元素钻取", 26, Math.min(y + 12, VH - 12));
+    ctx.fillText("数据截至 2026-08-07 · 不提供买卖建议 · 点击任意元素钻取", 26, Math.min(y + 12, VH - 12));
   }
 
   // current section watcher

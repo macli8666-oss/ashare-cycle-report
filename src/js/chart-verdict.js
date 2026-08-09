@@ -23,7 +23,7 @@
     const body = U.frame(host, {
       title: cab.question.replace("?", "") + "——把证据放上秤:指针停在「" + verdict.split(" ·")[0] + "」区",
       sub: "VERDICT SCALE · 左盘 = same-case 证据 · 右盘 = different-case 证据 · 虚线砝码 = 未满足的升级信号 · 红封条 = 共同证伪 · 梁倾角为定性示意非打分 · 全部可点",
-      src: "cycle_report.json · " + pid + "(cycle_answer_box + signal_grid,2026-07-17/18)",
+      src: "cycle_report.json · " + pid + "(cycle_answer_box + signal_grid,更新至2026-08-07)",
     });
 
     const W = 880, H = 560;
