@@ -19,4 +19,13 @@ LOG="research/data/weekly_update.log"
   fi
   echo "=== $(date '+%F %T') weekly update done ==="
 } >> "$LOG" 2>&1
-tail -5 "$LOG"
+
+# ── Lark 通知 ──
+LARK_HOOK="https://open.larksuite.com/open-apis/bot/v2/hook/fbb992ff-8755-457c-afdd-f06617366d47"
+COUNTS=$(grep "^counts:" "$LOG" | tail -1 | sed "s/^counts: //")
+ASOF=$(grep "^as_of:" "$LOG" | tail -1 | awk '{print $2}')
+PUSHSTAT=$(grep -E "^PUSH (OK|FAIL)$|no changes" "$LOG" | tail -1)
+TEXT="【个股推荐池周更】$(date '+%F %T')\n数据截至: ${ASOF:-未知}\n五桶分布: ${COUNTS:-未知}\nGitHub 推送: ${PUSHSTAT:-未知}\n日志: ~/ashare-cycle-report/research/data/weekly_update.log"
+curl -s -m 20 -X POST -H "Content-Type: application/json" \
+  -d "{\"msg_type\":\"text\",\"content\":{\"text\":\"$TEXT\"}}" "$LARK_HOOK" >> "$LOG" 2>&1
+tail -7 "$LOG"
