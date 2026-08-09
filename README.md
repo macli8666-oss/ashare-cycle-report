@@ -56,6 +56,13 @@ git add -A && git commit -m "update" && git push origin main
 - **手动补跑**：`ssh studio 'launchctl kickstart gui/$(id -u)/com.jinglong.ashare-weekly'`，或到 Studio 上直接执行 `weekly_update.sh`。
 - 家 MacBook 上的旧 Kimi 定时任务已停用，不要再启用，避免双机推送打架。
 
+## 五之二、每日收盘盯盘（Mac Studio · launchd）
+
+- **触发**：Studio 上 launchd 任务 `com.jinglong.ashare-daily-watch`，**每周一至周五 16:17**（A 股收盘后）。
+- **逻辑**（`research/data/daily_watch.py`）：监控名单每日从 `src/js/pool-data.js` 动态生成——🟢右侧贴线位（距 MA60≤5%）、🟠主升贴线位（距 MA20≤5%）、🟡等触发（距 MA60≤3%）。逐票重拉 Gildata 日K、重算均线后判定状态。
+- **推送规则**：只有状态**变化**才推 Lark——🚀收复触发价 / 🔺连续两日跌破离场线 / ✅解除证伪 / ↩️触发失效；平时完全静默。数据非当日（节假日/未更新）时不判定。
+- **状态文件**：`research/data/watch_state.json`（每台机器本地，已 gitignore）；首次运行仅建档不推送。
+
 ## 六、数据工具（Wind / Gildata）
 
 两个插件都需要在 Kimi 插件市场里已安装；凭证在网关侧或 `~/.kimi/agent-gw.json`。
