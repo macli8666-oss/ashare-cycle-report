@@ -57,13 +57,41 @@ def main():
 
     pct = lambda v: ("+" if v > 0 else "") + f"{v:.1f}%"
     dh = lambda s: pct(s["m"]["dist_hi"])  # 距52周高点回撤
+    d60 = lambda s: (s["m"]["close"] / s["m"]["ma60"] - 1) if s["m"]["ma60"] else None
+    d20 = lambda s: (s["m"]["close"] / s["m"]["ma20"] - 1) if s["m"]["ma20"] else None
+    # 绿/橙桶按"距离场线"升序：止损距离最小（安全垫最厚）的排最前
+    if by.get("green"):
+        by["green"].sort(key=lambda s: d60(s) if d60(s) is not None else 9)
+    if by.get("orange"):
+        by["orange"].sort(key=lambda s: d20(s) if d20(s) is not None else 9)
+
+    # ── 本周聚焦：贴线位 / 等触发 / 暂避 ──
+    fa = [s for s in by.get("green", []) if d60(s) is not None and 0 <= d60(s) <= 0.05]
+    fb = [s for s in by.get("yellow", []) if d60(s) is not None and abs(d60(s)) <= 0.03][:5]
+    fc = ([s for s in by.get("green", []) if d60(s) is not None and d60(s) > 0.08] +
+          [s for s in by.get("orange", []) if d20(s) is not None and d20(s) > 0.08])
+    focus = ["**📌 本周聚焦（按止损距离，厚垫在前）**"]
+    if fa:
+        focus.append("✅ 贴线位（右侧+距离场线≤5%，回踩姿势）：" + "、".join(
+            f"{s['name']}（离场线{s['m']['ma60']}元·距线{pct(d60(s)*100)}·量比{s['m']['vol_ratio']}）" for s in fa))
+    if fb:
+        focus.append("⏳ 等触发（黄桶距MA60≤3%，收复即升级）：" + "、".join(
+            f"{s['name']}（触发价{s['m']['ma60']}元·差{pct(d60(s)*100)}）" for s in fb))
+    if fc:
+        focus.append("🔕 暂避（同桶但离场线在-8%以外，等回踩不急）：" + "、".join(
+            f"{s['name']}（线距{pct((d60(s) if s['bucket']=='green' else d20(s))*100)}）" for s in fc))
+    if len(focus) == 1:
+        focus.append("本周无贴线位——候诊室名单见下方各桶，等名单自己变短。")
+
     elements = [
         md_div(f"数据截至 **{cur['as_of']}** 收盘 · 共 {total} 家\n{dist}"),
         {"tag": "hr"},
-        md_div(f"**🟠 主升中段（{counts['orange']}）**　趋势仍在、已不便宜（回撤｜60日涨幅｜离场线）\n" +
+        md_div("\n".join(focus)),
+        {"tag": "hr"},
+        md_div(f"**🟠 主升中段（{counts['orange']}）**　按距MA20离场线升序（回撤｜60日涨幅｜离场线）\n" +
                name_list(by.get("orange", []),
                          fmt=lambda s: f"{dh(s)}｜60日{pct(s['m']['r60'])}｜MA20 {s['m']['ma20']}元")),
-        md_div(f"**🟢 右侧确认（{counts['green']}）**　行业+价格+业绩同向（回撤｜20日涨幅｜离场线）\n" +
+        md_div(f"**🟢 右侧确认（{counts['green']}）**　按距MA60离场线升序（回撤｜20日涨幅｜离场线）\n" +
                name_list(by.get("green", []),
                          fmt=lambda s: f"{dh(s)}｜20日{pct(s['m']['r20'])}｜MA60 {s['m']['ma60']}元")),
         {"tag": "hr"},
