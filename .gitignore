@@ -3,3 +3,4 @@ dist/
 dist-single.html
 __pycache__/
 .DS_Store
+research/data/*.log
