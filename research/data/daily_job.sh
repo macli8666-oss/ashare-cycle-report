@@ -9,6 +9,7 @@ LOG="research/data/daily_job.log"
   echo "=== $(date '+%F %T') daily job start ==="
   python3 research/data/daily_watch.py
   python3 research/data/trade_tracker.py
+  python3 research/data/commodity_alert.py
   (cd src && python3 tools/bundle.py && cp dist-single.html ../index.html)
   git add -A
   if ! git diff --cached --quiet; then
