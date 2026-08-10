@@ -58,10 +58,17 @@ git add -A && git commit -m "update" && git push origin main
 
 ## 五之二、每日收盘盯盘（Mac Studio · launchd）
 
-- **触发**：Studio 上 launchd 任务 `com.jinglong.ashare-daily-watch`，**每周一至周五 16:17**（A 股收盘后）。
-- **逻辑**（`research/data/daily_watch.py`）：监控名单每日从 `src/js/pool-data.js` 动态生成——🟢右侧贴线位（距 MA60≤5%）、🟠主升贴线位（距 MA20≤5%）、🟡等触发（距 MA60≤3%）。逐票重拉 Gildata 日K、重算均线后判定状态。
-- **推送规则**：只有状态**变化**才推 Lark——🚀收复触发价 / 🔺连续两日跌破离场线 / ✅解除证伪 / ↩️触发失效；平时完全静默。数据非当日（节假日/未更新）时不判定。
-- **状态文件**：`research/data/watch_state.json`（每台机器本地，已 gitignore）；首次运行仅建档不推送。
+- **触发**：Studio 上 launchd 任务 `com.jinglong.ashare-daily-watch`，**每周一至周五 16:17**（A 股收盘后），执行 `research/data/daily_job.sh`。
+- **流水线**：`daily_watch.py`（聚焦名单状态变化→Lark）→ `trade_tracker.py`（信号台账推进：新开仓/平仓→Lark）→ 打包 → commit & push。
+- **盯盘名单**每日从 `src/js/pool-data.js` 动态生成——🟢右侧贴线位（距 MA60≤5%）、🟠主升贴线位（距 MA20≤5%）、🟡等触发（距 MA60≤3%）；只有状态**变化**才推 Lark，平时静默。
+- **状态文件**：`research/data/watch_state.json`（本机状态，已 gitignore）。
+
+## 五之三、信号台账与规则自我进化（§8.86）
+
+- **台账引擎** `trade_tracker.py`：信号 = 收盘上穿 MA60（幅度≤entry_band）→ 次日开盘价模拟入场 → 出场双轨止盈（破 MA(tp_ma) 或峰值回撤 tp_dd）+ 连续 stop_days 日收 MA60 下止损，次日开盘价成交。`--bootstrap` 全历史回放重建台账；`--local` 用本地CSV（周更时）。
+- **规则配置** `rules_config.json`：当前参数 + changelog，网站台账页展示。
+- **自我进化** `self_evolve.py`（每周日随周更跑）：94 家全历史回放检验相邻参数网格，满足安全栏才自动调参——样本≥10 笔、期望值提升>10%、交易数覆盖≥80%、每周最多一格、同参数 28 天冷却；每次变更推 Lark 告知新旧规则与证据。
+- **数据文件**：`signals_ledger.json`（台账明细）→ 生成 `src/js/ledger-data.js`。
 
 ## 六、数据工具（Wind / Gildata）
 
