@@ -59,8 +59,9 @@ git add -A && git commit -m "update" && git push origin main
 ## 五之二、每日收盘盯盘（Mac Studio · launchd）
 
 - **触发**：Studio 上 launchd 任务 `com.jinglong.ashare-daily-watch`，**每周一至周五 16:17**（A 股收盘后），执行 `research/data/daily_job.sh`。
-- **流水线**：`daily_watch.py`（聚焦名单状态变化→Lark）→ `trade_tracker.py`（信号台账推进：新开仓/平仓→Lark）→ 打包 → commit & push。
-- **盯盘名单**每日从 `src/js/pool-data.js` 动态生成——🟢右侧贴线位（距 MA60≤5%）、🟠主升贴线位（距 MA20≤5%）、🟡等触发（距 MA60≤3%）；只有状态**变化**才推 Lark，平时静默。
+- **流水线**：`daily_watch.py`（贴线位风控预警→Lark）→ `trade_tracker.py`（信号台账推进：新信号/开仓/平仓→Lark）→ 打包 → commit & push。
+- **盯盘名单**每日从 `src/js/pool-data.js` 动态生成——🟢右侧贴线位（距 MA60≤5%）、🟠主升贴线位（距 MA20≤5%）；只有连续两日收在离场线下方（证伪🔺）或收复离场线（解除✅）才推 Lark，平时静默。
+- **信号口径唯一来源**：入场/待入场/平仓信号一律由 `trade_tracker.py` 发出（事件口径：前收在 MA60 下方 + 当日收穿 MA60 + 超出幅度≤entry_band，全 94 家）。daily_watch 不再推"等触发🚀"，避免两套名单口径打架（2026-08-10 起）。
 - **状态文件**：`research/data/watch_state.json`（本机状态，已 gitignore）。
 
 ## 五之三、信号台账与规则自我进化（§8.86）

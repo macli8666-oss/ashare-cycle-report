@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""每日收盘盯盘：聚焦名单状态变化 → Lark 推送（无变化则静默）。
-监控三类（名单每日从 src/js/pool-data.js 动态生成，跟随每周五桶更新）：
+"""每日收盘盯盘：贴线位风控预警 → Lark 推送（无变化则静默）。
+只监控 A 类（名单每日从 src/js/pool-data.js 动态生成，跟随每周五桶更新）：
   A 贴线位   🟢右侧确认且距MA60≤5%（另含🟠主升且距MA20≤5%）→ 连续两日收在离场线下方 = 证伪
-  B 等触发   🟡底部蓄势且距MA60≤3% → 收盘站上MA60 = 升级触发
+入场/待入场/平仓信号统一由 trade_tracker.py（信号台账，§8.86）推送，本脚本不再推 🚀 触发，
+避免与台账的事件口径（前收线下+当日穿越+幅度带）产生两套名单。
 状态存 research/data/watch_state.json，只在状态变化时推送。首次运行仅建档不推送。
 用法：python3 daily_watch.py [--force 忽略数据日期检查] [--dry 只打印不发]"""
 import json, csv, os, subprocess, sys, time, urllib.request
@@ -33,8 +34,6 @@ def load_pool():
             watch.append({"code": s["code"], "name": s["name"], "tier": "A", "line_ma": 60, "role": "右侧贴线位"})
         elif s["bucket"] == "orange" and 0 <= d20 <= 0.05:
             watch.append({"code": s["code"], "name": s["name"], "tier": "A", "line_ma": 20, "role": "主升贴线位"})
-        elif s["bucket"] == "yellow" and abs(d60) <= 0.03:
-            watch.append({"code": s["code"], "name": s["name"], "tier": "B", "line_ma": 60, "role": "等触发"})
     return watch, pool["as_of"]
 
 def gildata_kline(code, name):
@@ -71,19 +70,13 @@ def evaluate(w, rows):
     k = w["line_ma"]
     line = ma(closes, k)
     if line is None: return None
-    if w["tier"] == "A":
-        broken = len(closes) >= 2 and closes[-1] < line and ma(closes[:-1], k) and closes[-2] < ma(closes[:-1], k)
-        status = "broken" if broken else "normal"
-    else:
-        status = "triggered" if c >= line else ("reset" if c < line * 0.97 else "waiting")
+    broken = len(closes) >= 2 and closes[-1] < line and ma(closes[:-1], k) and closes[-2] < ma(closes[:-1], k)
+    status = "broken" if broken else "normal"
     return {"date": rows[-1][0], "close": round(c, 2), "line": round(line, 2), "status": status}
 
 ALERT_TEXT = {
     ("normal", "broken"):    "🔺 **{name}**：连续两日收在离场线 {line} 元下方（现价 {close} 元）→ {role}证伪，按纪律离场",
     ("broken", "normal"):    "✅ **{name}**：收复离场线 {line} 元（现价 {close} 元）→ 解除证伪，恢复观察",
-    ("waiting", "triggered"): "🚀 **{name}**：收盘站上触发价 {line} 元（现价 {close} 元）→ 升级右侧观察，可按贴线位纪律盯",
-    ("triggered", "reset"):  "↩️ **{name}**：跌回触发价 {line} 元下方超3%（现价 {close} 元）→ 触发失效，退回等触发",
-    ("reset", "waiting"):    "🔁 **{name}**：回到触发价 {line} 元附近（现价 {close} 元）→ 重新进入等触发",
 }
 
 def main():
@@ -115,10 +108,10 @@ def main():
     card = {"msg_type": "interactive", "card": {
         "config": {"wide_screen_mode": True},
         "header": {"template": "red" if any("🔺" in e for e in events) else "green",
-                   "title": {"tag": "plain_text", "content": f"🚨 个股推荐池 · 状态变化 {time.strftime('%m-%d')}"}},
+                   "title": {"tag": "plain_text", "content": f"🚨 贴线位风控 · 状态变化 {time.strftime('%m-%d')}"}},
         "elements": [{"tag": "div", "text": {"tag": "lark_md", "content": "\n".join(events)}},
                      {"tag": "hr"},
-                     {"tag": "div", "text": {"tag": "lark_md", "content": "每日收盘 16:17 自动盯盘 · 仅状态变化时推送 · 网站 §8.85"}}]}}
+                     {"tag": "div", "text": {"tag": "lark_md", "content": "每日收盘 16:17 自动盯盘 · 仅破线/收复时推送 · 入场/平仓信号见台账卡片 · 网站 §8.85/§8.86"}}]}}
     if DRY:
         print(json.dumps(card, ensure_ascii=False, indent=2)); return
     req = urllib.request.Request(HOOK, data=json.dumps(card).encode("utf-8"),

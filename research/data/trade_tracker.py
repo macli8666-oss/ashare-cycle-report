@@ -166,12 +166,20 @@ def daily_update(led):
         m = ma(closes, 60)
         if m and -RULES["entry_band"] - 0.05 <= closes[-1] / m - 1 <= 0.03:
             cands.add(code)
+    # 并发预拉候选股最新行情（串行逐股拉太慢，前台 300s 跑不完）
+    fresh = {}
+    if not LOCAL:
+        todo = [(c, n) for c, n, _ in U if c in cands]
+        from concurrent.futures import ThreadPoolExecutor
+        with ThreadPoolExecutor(max_workers=4) as ex:
+            for (c, _), rows in zip(todo, ex.map(lambda cn: fresh_rows(*cn), todo)):
+                fresh[c] = rows
     events = []
     snap = {k: RULES[k] for k in ("entry_band", "stop_days", "tp_dd", "tp_ma")}
     known = {key(t) for t in led["trades"]}
     for code, name, _ in U:
         if code not in cands: continue
-        rows = local_rows(code) if LOCAL else fresh_rows(code, name)
+        rows = local_rows(code) if LOCAL else fresh.get(code)
         if not rows: continue
         # 1) 新信号（用当前规则，只看最近3根bar的穿越）
         for t in simulate(rows, RULES)[-3:]:

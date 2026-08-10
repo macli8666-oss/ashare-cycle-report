@@ -67,7 +67,9 @@ def main():
 
     # ── 本周聚焦：贴线位 / 等触发 / 暂避 ──
     fa = [s for s in by.get("green", []) if d60(s) is not None and 0 <= d60(s) <= 0.05]
-    fb = [s for s in by.get("yellow", []) if d60(s) is not None and abs(d60(s)) <= 0.03][:5]
+    fb_all = [s for s in by.get("yellow", []) if d60(s) is not None and abs(d60(s)) <= 0.03]
+    fb = [s for s in fb_all if d60(s) < 0][:5]           # 仍在线下 = 真等待
+    fb_done = [s for s in fb_all if d60(s) >= 0]          # 已站上线 = 交由台账记账
     fc = ([s for s in by.get("green", []) if d60(s) is not None and d60(s) > 0.08] +
           [s for s in by.get("orange", []) if d20(s) is not None and d20(s) > 0.08])
     focus = ["**📌 本周聚焦（按止损距离，厚垫在前）**"]
@@ -75,8 +77,11 @@ def main():
         focus.append("✅ 贴线位（右侧+距离场线≤5%，回踩姿势）：" + "、".join(
             f"{s['name']}（离场线{s['m']['ma60']}元·距线{pct(d60(s)*100)}·量比{s['m']['vol_ratio']}）" for s in fa))
     if fb:
-        focus.append("⏳ 等触发（黄桶距MA60≤3%，收复即升级）：" + "、".join(
+        focus.append("⏳ 等触发（黄桶·仍在MA60下方3%以内，收复当日由台账记账并推送）：" + "、".join(
             f"{s['name']}（触发价{s['m']['ma60']}元·差{pct(d60(s)*100)}）" for s in fb))
+    if fb_done:
+        focus.append("📒 已站上MA60（信号口径以台账为准，见 §8.86 待入场/持仓）：" +
+                     "、".join(s["name"] for s in fb_done[:8]))
     if fc:
         focus.append("🔕 暂避（同桶但离场线在-8%以外，等回踩不急）：" + "、".join(
             f"{s['name']}（线距{pct((d60(s) if s['bucket']=='green' else d20(s))*100)}）" for s in fc))
