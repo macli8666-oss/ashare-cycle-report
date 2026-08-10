@@ -10,6 +10,8 @@ LOG="research/data/weekly_update.log"
   [ -f src/js/pool-data.js ] && cp src/js/pool-data.js research/data/stock_pool/pool-data.prev.js
   python3 research/data/pull_stock_pool_gildata.py --refresh --start 0 --limit 94
   python3 research/data/compute_stock_pool.py
+  python3 research/data/self_evolve.py
+  python3 research/data/trade_tracker.py --no-lark --local
   (cd src && python3 tools/bundle.py && cp dist-single.html ../index.html)
   git add -A
   if ! git diff --cached --quiet; then

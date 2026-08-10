@@ -818,3 +818,24 @@ ul.ds-mon li:hover .ds-mon-l { color: var(--red); }
 }
 .pl-more .pl-grid { margin-top: 10px; }
 .pl-trigger { font-family: var(--mono); font-size: 11px; color: var(--red); margin: 0 0 6px; font-variant-numeric: tabular-nums; }
+
+/* ── 信号台账 ── */
+.lg-strip { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 6px; }
+.lg-chip { border: 1px solid var(--line); border-radius: 8px; padding: 7px 12px; background: var(--paper); display: flex; flex-direction: column; gap: 2px; }
+.lg-chip-k { font-family: var(--mono); font-size: 9.5px; letter-spacing: .08em; color: var(--ink-lo); }
+.lg-chip-v { font-family: var(--mono); font-size: 13px; color: var(--ink); }
+.lg-asof { font-family: var(--mono); font-size: 10.5px; color: var(--ink-lo); margin: 0 0 18px; }
+.lg-sec { margin: 0 0 22px; }
+.lg-t { font-size: 16px; margin: 0 0 8px; }
+.lg-sub { font-family: var(--mono); font-size: 10.5px; font-weight: 400; color: var(--ink-lo); }
+.lg-empty { border: 1px dashed var(--line); border-radius: 8px; padding: 12px 16px; font-size: 13px; color: var(--ink-lo); background: var(--paper-hi); margin: 0; }
+.lg-table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.lg-table th { font-family: var(--mono); font-size: 9.5px; letter-spacing: .08em; color: var(--ink-lo); text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+.lg-table td { font-size: 12.5px; color: var(--ink); padding: 6px 8px; border-bottom: 1px solid var(--line-lo); white-space: nowrap; }
+.lg-table td.nm { font-weight: 600; }
+.lg-table td.pos { color: var(--green); font-weight: 600; }
+.lg-table td.neg { color: var(--neg); font-weight: 600; }
+.lg-more summary { font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; color: var(--red); cursor: pointer; padding: 4px 0; }
+.lg-more .lg-table { margin-top: 10px; }
+.lg-log { margin: 0; padding-left: 18px; }
+.lg-log li { font-family: var(--mono); font-size: 11px; color: var(--ink-md); margin-bottom: 5px; line-height: 1.5; }

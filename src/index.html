@@ -38,6 +38,7 @@
     </div>
     <div class="tn-item"><a href="#sec-matrix" data-nav="sec-matrix">公司矩阵</a></div>
     <div class="tn-item"><a href="#sec-pool" data-nav="sec-pool">个股推荐池</a></div>
+    <div class="tn-item"><a href="#sec-ledger" data-nav="sec-ledger">信号台账</a></div>
     <div class="tn-item"><a href="#sec-dossier" data-nav="sec-dossier">全景档案</a></div>
     <div class="tn-item"><a href="#sec-monitor" data-nav="sec-monitor">监测</a></div>
     <div class="tn-item"><a href="#sec-sources" data-nav="sec-sources">来源</a></div>
@@ -353,6 +354,17 @@
   </div>
 </section>
 
+<!-- ═══ §8.86 信号台账(模拟交易追踪) ═══ -->
+<section id="sec-ledger" class="band" data-win="ledger">
+  <div class="prose">
+    <p class="sec-no">§8.86 · 信号台账</p>
+    <h2>每个"收复MA60"信号都记账:次日开盘模拟买入,跟到止损或止盈离场,胜率盈亏全摊开</h2>
+    <p class="dek">推荐池只说"谁在什么位置",台账回答"这套规则历史上跑成什么样":信号触发→次日开盘价模拟入场→每日跟踪→连续两日收在 MA60 下方止损,或跌破 MA20 / 峰值回撤 10% 止盈(双轨先到先走)。每笔单记录盈亏、持有天数、最大浮盈与出场原因。</p>
+    <p>台账同时是<b>规则自我进化</b>的燃料:每周日用全历史回放检验备选参数,满足样本与增益门槛才允许小幅调整,每次调整写入进化日志并推送通知。<b>模拟口径不含滑点、涨跌停与流动性限制,实盘结果会系统性偏差。</b></p>
+  </div>
+  <div class="wide xl"><div id="ledger-host"></div></div>
+</section>
+
 <!-- ═══ §8.9 全景档案(17 个 B 层行业) ═══ -->
 <section id="sec-dossier" class="band" data-win="dossier">
   <div class="prose">
@@ -471,6 +483,7 @@
 <script src="js/data.js"></script>
 <script src="js/content.js"></script>
 <script src="js/pool-data.js"></script>
+<script src="js/ledger-data.js"></script>
 <script src="js/sources.js"></script>
 <script src="js/utils.js"></script>
 <script src="js/cover.js"></script>
@@ -489,6 +502,7 @@
 <script src="js/chart-destiny.js"></script>
 <script src="js/render-content.js"></script>
 <script src="js/pool.js"></script>
+<script src="js/ledger.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

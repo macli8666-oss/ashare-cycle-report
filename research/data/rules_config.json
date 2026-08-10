@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "entry_band": 0.03,
+  "stop_days": 2,
+  "tp_dd": 0.10,
+  "tp_ma": 20,
+  "comment": "信号台账规则。entry_band=收复MA60后多少幅度内可入场；stop_days=连续几日收在MA60下方证伪出场；tp_dd=从最高收盘回撤多少止盈；tp_ma=跌破几日均线止盈。双轨止盈先到先走。",
+  "changelog": [
+    {"date": "2026-08-10", "change": "初始规则入库", "params": {"entry_band": 0.03, "stop_days": 2, "tp_dd": 0.10, "tp_ma": 20}, "reason": "人工设定基线", "evidence": "—"}
+  ]
+}
