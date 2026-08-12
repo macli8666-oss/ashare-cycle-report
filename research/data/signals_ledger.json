@@ -2016,12 +2016,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-11",
-   "last_px": 90.18,
-   "peak_close": 90.93,
-   "float_pct": 3.7,
-   "days": 9,
-   "exit_line": 84.54
+   "last_date": "2026-08-12",
+   "last_px": 91.09,
+   "peak_close": 91.09,
+   "float_pct": 4.7,
+   "days": 10,
+   "exit_line": 84.55
   },
   {
    "signal_date": "2025-04-08",
@@ -2215,12 +2215,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-11",
-   "last_px": 94.87,
-   "peak_close": 96.57,
-   "float_pct": 5.1,
-   "days": 9,
-   "exit_line": 87.56
+   "last_date": "2026-08-12",
+   "last_px": 99.18,
+   "peak_close": 99.18,
+   "float_pct": 9.8,
+   "days": 10,
+   "exit_line": 87.62
   },
   {
    "signal_date": "2025-04-09",
@@ -2999,7 +2999,7 @@
   },
   {
    "signal_date": "2026-08-07",
-   "status": "open",
+   "status": "closed",
    "signal_px": 120.22,
    "signal_ma60": 119.53,
    "code": "600809.SH",
@@ -3018,9 +3018,15 @@
    "last_px": 120.72,
    "peak_close": 123.1,
    "float_pct": 0.4,
-   "days": 1,
+   "days": 2,
    "exit_line": 119.24,
-   "pending_exit": "止盈：收盘跌破MA20"
+   "pending_exit": "止盈：收盘跌破MA20",
+   "exit_date": "2026-08-12",
+   "exit_px": 120.14,
+   "reason": "止盈：收盘跌破MA20",
+   "exit_signal_date": "2026-08-11",
+   "max_up": 2.4,
+   "pnl": -0.07
   },
   {
    "signal_date": "2025-08-18",
@@ -3638,12 +3644,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-11",
-   "last_px": 75.65,
+   "last_date": "2026-08-12",
+   "last_px": 75.06,
    "peak_close": 78.01,
-   "float_pct": 2.0,
-   "days": 8,
-   "exit_line": 72.78
+   "float_pct": 1.2,
+   "days": 9,
+   "exit_line": 72.7
   },
   {
    "signal_date": "2025-04-08",
@@ -4137,12 +4143,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-11",
-   "last_px": 25.95,
+   "last_date": "2026-08-12",
+   "last_px": 26.16,
    "peak_close": 26.46,
-   "float_pct": 5.6,
-   "days": 9,
-   "exit_line": 24.21
+   "float_pct": 6.5,
+   "days": 10,
+   "exit_line": 24.2
   },
   {
    "signal_date": "2025-07-02",
@@ -4585,12 +4591,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-11",
-   "last_px": 235.99,
+   "last_date": "2026-08-12",
+   "last_px": 234.0,
    "peak_close": 242.33,
-   "float_pct": 0.4,
-   "days": 6,
-   "exit_line": 228.59
+   "float_pct": -0.4,
+   "days": 7,
+   "exit_line": 228.68
   },
   {
    "signal_date": "2025-05-06",
@@ -5565,12 +5571,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-11",
+   "last_date": "2026-08-12",
    "last_px": 22.8,
    "peak_close": 23.33,
    "float_pct": -2.1,
-   "days": 5,
-   "exit_line": 22.57
+   "days": 6,
+   "exit_line": 22.51
   },
   {
    "signal_date": "2025-06-09",
@@ -5889,12 +5895,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-11",
-   "last_px": 261.4,
+   "last_date": "2026-08-12",
+   "last_px": 260.48,
    "peak_close": 279.15,
-   "float_pct": 11.7,
-   "days": 18,
-   "exit_line": 235.04
+   "float_pct": 11.3,
+   "days": 19,
+   "exit_line": 235.12
   },
   {
    "signal_date": "2025-06-11",
@@ -11555,7 +11561,7 @@
    "signal_date": "2026-07-20",
    "entry_date": "2026-07-21",
    "entry_px": 51.36,
-   "status": "open",
+   "status": "closed",
    "signal_px": 51.87,
    "signal_ma60": 51.42,
    "code": "603338.SH",
@@ -11572,9 +11578,15 @@
    "last_px": 55.67,
    "peak_close": 60.48,
    "float_pct": 8.4,
-   "days": 15,
+   "days": 16,
    "exit_line": 52.05,
-   "pending_exit": "止盈：收盘跌破MA20"
+   "pending_exit": "止盈：收盘跌破MA20",
+   "exit_date": "2026-08-12",
+   "exit_px": 55.74,
+   "reason": "止盈：收盘跌破MA20",
+   "exit_signal_date": "2026-08-11",
+   "max_up": 17.8,
+   "pnl": 8.53
   },
   {
    "signal_date": "2025-07-17",
@@ -12068,12 +12080,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-11",
-   "last_px": 17.96,
+   "last_date": "2026-08-12",
+   "last_px": 17.82,
    "peak_close": 18.58,
-   "float_pct": 4.2,
-   "days": 8,
-   "exit_line": 16.17
+   "float_pct": 3.4,
+   "days": 9,
+   "exit_line": 16.18
   },
   {
    "signal_date": "2025-04-21",
@@ -12217,12 +12229,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-11",
-   "last_px": 19.6,
+   "last_date": "2026-08-12",
+   "last_px": 19.67,
    "peak_close": 20.23,
-   "float_pct": 3.2,
-   "days": 7,
-   "exit_line": 19.03
+   "float_pct": 3.5,
+   "days": 8,
+   "exit_line": 19.0
   },
   {
    "signal_date": "2025-05-06",
@@ -13253,12 +13265,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-11",
-   "last_px": 390.4,
-   "peak_close": 393.87,
-   "float_pct": -4.8,
-   "days": 3,
-   "exit_line": 392.71
+   "last_date": "2026-08-12",
+   "last_px": 393.93,
+   "peak_close": 393.93,
+   "float_pct": -3.9,
+   "days": 4,
+   "exit_line": 392.31
   },
   {
    "signal_date": "2025-06-30",
@@ -13352,12 +13364,12 @@
    },
    "entry_date": "2026-08-10",
    "entry_px": 12.88,
-   "last_date": "2026-08-11",
-   "last_px": 12.84,
-   "peak_close": 12.84,
-   "float_pct": -0.3,
-   "days": 1,
-   "exit_line": 12.76
+   "last_date": "2026-08-12",
+   "last_px": 13.49,
+   "peak_close": 13.49,
+   "float_pct": 4.7,
+   "days": 2,
+   "exit_line": 12.71
   },
   {
    "signal_date": "2025-06-30",
@@ -13851,12 +13863,12 @@
    },
    "entry_date": "2026-08-10",
    "entry_px": 18.93,
-   "last_date": "2026-08-11",
-   "last_px": 18.76,
-   "peak_close": 18.81,
-   "float_pct": -0.9,
-   "days": 1,
-   "exit_line": 18.55
+   "last_date": "2026-08-12",
+   "last_px": 19.06,
+   "peak_close": 19.06,
+   "float_pct": 0.7,
+   "days": 2,
+   "exit_line": 18.51
   },
   {
    "signal_date": "2025-05-13",
@@ -16110,12 +16122,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-11",
-   "last_px": 33.18,
+   "last_date": "2026-08-12",
+   "last_px": 33.58,
    "peak_close": 35.45,
-   "float_pct": 7.7,
-   "days": 14,
-   "exit_line": 29.97
+   "float_pct": 9.0,
+   "days": 15,
+   "exit_line": 30.01
   },
   {
    "signal_date": "2025-05-07",
@@ -17514,12 +17526,13 @@
    },
    "entry_date": "2026-08-11",
    "entry_px": 91.18,
-   "last_date": "2026-08-11",
-   "last_px": 90.12,
-   "peak_close": 90.12,
-   "float_pct": -1.2,
-   "days": 0,
-   "exit_line": 90.61
+   "last_date": "2026-08-12",
+   "last_px": 90.41,
+   "peak_close": 90.41,
+   "float_pct": -0.8,
+   "days": 1,
+   "exit_line": 90.51,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2026-08-10",
@@ -17538,12 +17551,12 @@
    },
    "entry_date": "2026-08-11",
    "entry_px": 41.29,
-   "last_date": "2026-08-11",
-   "last_px": 41.1,
-   "peak_close": 41.1,
-   "float_pct": -0.5,
-   "days": 0,
-   "exit_line": 41.42
+   "last_date": "2026-08-12",
+   "last_px": 41.62,
+   "peak_close": 41.62,
+   "float_pct": 0.8,
+   "days": 1,
+   "exit_line": 41.36
   },
   {
    "signal_date": "2026-08-10",
@@ -17586,12 +17599,12 @@
    },
    "entry_date": "2026-08-11",
    "entry_px": 7.11,
-   "last_date": "2026-08-11",
-   "last_px": 7.01,
+   "last_date": "2026-08-12",
+   "last_px": 7.0,
    "peak_close": 7.01,
-   "float_pct": -1.4,
-   "days": 0,
-   "exit_line": 7.06
+   "float_pct": -1.5,
+   "days": 1,
+   "exit_line": 7.04
   },
   {
    "signal_date": "2026-08-10",
@@ -17634,12 +17647,13 @@
    },
    "entry_date": "2026-08-11",
    "entry_px": 29.35,
-   "last_date": "2026-08-11",
-   "last_px": 29.81,
+   "last_date": "2026-08-12",
+   "last_px": 29.5,
    "peak_close": 29.81,
-   "float_pct": 1.6,
-   "days": 0,
-   "exit_line": 29.12
+   "float_pct": 0.5,
+   "days": 1,
+   "exit_line": 29.1,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2026-08-10",
@@ -17658,12 +17672,13 @@
    },
    "entry_date": "2026-08-11",
    "entry_px": 8.44,
-   "last_date": "2026-08-11",
-   "last_px": 8.2,
-   "peak_close": 8.2,
-   "float_pct": -2.8,
-   "days": 0,
-   "exit_line": 8.41
+   "last_date": "2026-08-12",
+   "last_px": 8.24,
+   "peak_close": 8.24,
+   "float_pct": -2.4,
+   "days": 1,
+   "exit_line": 8.4,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2026-08-10",
@@ -17682,12 +17697,12 @@
    },
    "entry_date": "2026-08-11",
    "entry_px": 5.29,
-   "last_date": "2026-08-11",
-   "last_px": 5.31,
+   "last_date": "2026-08-12",
+   "last_px": 5.29,
    "peak_close": 5.31,
-   "float_pct": 0.4,
-   "days": 0,
-   "exit_line": 5.21
+   "float_pct": 0.0,
+   "days": 1,
+   "exit_line": 5.2
   },
   {
    "signal_date": "2026-08-10",
@@ -17706,12 +17721,12 @@
    },
    "entry_date": "2026-08-11",
    "entry_px": 14.4,
-   "last_date": "2026-08-11",
-   "last_px": 14.21,
-   "peak_close": 14.21,
-   "float_pct": -1.3,
-   "days": 0,
-   "exit_line": 13.93
+   "last_date": "2026-08-12",
+   "last_px": 14.29,
+   "peak_close": 14.29,
+   "float_pct": -0.8,
+   "days": 1,
+   "exit_line": 13.92
   },
   {
    "signal_date": "2026-08-10",
@@ -17730,12 +17745,12 @@
    },
    "entry_date": "2026-08-11",
    "entry_px": 16.1,
-   "last_date": "2026-08-11",
+   "last_date": "2026-08-12",
    "last_px": 16.02,
    "peak_close": 16.02,
    "float_pct": -0.5,
-   "days": 0,
-   "exit_line": 16.0
+   "days": 1,
+   "exit_line": 15.95
   },
   {
    "signal_date": "2026-08-10",
@@ -17754,12 +17769,12 @@
    },
    "entry_date": "2026-08-11",
    "entry_px": 11.99,
-   "last_date": "2026-08-11",
-   "last_px": 12.06,
-   "peak_close": 12.06,
-   "float_pct": 0.6,
-   "days": 0,
-   "exit_line": 11.98
+   "last_date": "2026-08-12",
+   "last_px": 12.12,
+   "peak_close": 12.12,
+   "float_pct": 1.1,
+   "days": 1,
+   "exit_line": 11.95
   },
   {
    "signal_date": "2026-08-10",
@@ -17778,12 +17793,12 @@
    },
    "entry_date": "2026-08-11",
    "entry_px": 395.0,
-   "last_date": "2026-08-11",
-   "last_px": 390.4,
-   "peak_close": 390.4,
-   "float_pct": -1.2,
-   "days": 0,
-   "exit_line": 392.71
+   "last_date": "2026-08-12",
+   "last_px": 393.93,
+   "peak_close": 393.93,
+   "float_pct": -0.3,
+   "days": 1,
+   "exit_line": 392.31
   },
   {
    "signal_date": "2026-08-10",
@@ -17802,12 +17817,13 @@
    },
    "entry_date": "2026-08-11",
    "entry_px": 44.94,
-   "last_date": "2026-08-11",
-   "last_px": 44.7,
+   "last_date": "2026-08-12",
+   "last_px": 44.07,
    "peak_close": 44.7,
-   "float_pct": -0.5,
-   "days": 0,
-   "exit_line": 44.24
+   "float_pct": -1.9,
+   "days": 1,
+   "exit_line": 44.2,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2026-08-11",
@@ -17818,6 +17834,22 @@
    "name": "绿的谐波",
    "ind": "机械设备",
    "zone": 3.2,
+   "rules": {
+    "entry_band": 0.03,
+    "stop_days": 2,
+    "tp_dd": 0.1,
+    "tp_ma": 20
+   }
+  },
+  {
+   "signal_date": "2026-08-12",
+   "status": "pending",
+   "signal_px": 13.14,
+   "signal_ma60": 13.01,
+   "code": "601012.SH",
+   "name": "隆基绿能",
+   "ind": "电力设备",
+   "zone": 3.0,
    "rules": {
     "entry_band": 0.03,
     "stop_days": 2,
