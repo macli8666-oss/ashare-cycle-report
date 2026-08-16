@@ -17814,7 +17814,7 @@
   },
   {
    "signal_date": "2026-08-10",
-   "status": "open",
+   "status": "closed",
    "signal_px": 16.18,
    "signal_ma60": 16.06,
    "code": "300413.SZ",
@@ -17833,8 +17833,14 @@
    "last_px": 16.02,
    "peak_close": 16.02,
    "float_pct": -0.5,
-   "days": 1,
-   "exit_line": 15.95
+   "days": 3,
+   "exit_line": 15.95,
+   "exit_date": "2026-08-14",
+   "exit_px": 15.65,
+   "reason": "止盈：收盘跌破MA20",
+   "exit_signal_date": "2026-08-13",
+   "max_up": -0.5,
+   "pnl": -2.8
   },
   {
    "signal_date": "2026-08-10",
@@ -17996,6 +18002,31 @@
    "float_pct": 1.1,
    "days": 0,
    "exit_line": 44.17
+  },
+  {
+   "signal_date": "2026-07-27",
+   "entry_date": "2026-07-28",
+   "entry_px": 236.51,
+   "status": "closed",
+   "signal_px": 240.8,
+   "signal_ma60": 234.59,
+   "exit_date": "2026-08-14",
+   "exit_px": 254.51,
+   "reason": "止盈：自峰值回撤超8%",
+   "exit_signal_date": "2026-08-13",
+   "days": 13,
+   "max_up": 18.0,
+   "code": "688111.SH",
+   "name": "金山办公",
+   "ind": "计算机",
+   "zone": 3.1,
+   "rules": {
+    "entry_band": 0.03,
+    "stop_days": 2,
+    "tp_dd": 0.08,
+    "tp_ma": 20
+   },
+   "pnl": 7.61
   }
  ]
 }

@@ -1,11 +1,37 @@
 {
-  "version": 3,
+  "version": 4,
   "entry_band": 0.03,
   "stop_days": 2,
-  "tp_dd": 0.10,
+  "tp_dd": 0.08,
   "tp_ma": 20,
   "comment": "信号台账规则。entry_band=收复MA60后多少幅度内可入场；stop_days=连续几日收在MA60下方证伪出场；tp_dd=从最高收盘回撤多少止盈；tp_ma=跌破几日均线止盈。双轨止盈先到先走。",
   "changelog": [
-    {"date": "2026-08-10", "change": "初始规则入库", "params": {"entry_band": 0.03, "stop_days": 2, "tp_dd": 0.10, "tp_ma": 20}, "reason": "人工设定基线", "evidence": "—"}
+    {
+      "date": "2026-08-10",
+      "change": "初始规则入库",
+      "params": {
+        "entry_band": 0.03,
+        "stop_days": 2,
+        "tp_dd": 0.1,
+        "tp_ma": 20
+      },
+      "reason": "人工设定基线",
+      "evidence": "—"
+    },
+    {
+      "date": "2026-08-16",
+      "change": "自动调参：tp_dd 0.1 → 0.08",
+      "params": {
+        "entry_band": 0.03,
+        "stop_days": 2,
+        "tp_dd": 0.08,
+        "tp_ma": 20
+      },
+      "changed_params": [
+        "tp_dd"
+      ],
+      "reason": "全历史回放期望值 0.93% → 1.03%（n=698，胜率 31.2%）",
+      "evidence": "simulate over 94 stocks, local kline through weekly refresh"
+    }
   ]
 }
