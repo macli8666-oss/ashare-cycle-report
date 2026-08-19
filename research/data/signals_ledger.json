@@ -2228,12 +2228,13 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-18",
-   "last_px": 96.3,
+   "last_date": "2026-08-19",
+   "last_px": 93.0,
    "peak_close": 100.42,
-   "float_pct": 6.6,
-   "days": 14,
-   "exit_line": 87.85
+   "float_pct": 3.0,
+   "days": 15,
+   "exit_line": 87.86,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2025-04-09",
@@ -3183,12 +3184,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-18",
-   "last_px": 30.08,
+   "last_date": "2026-08-19",
+   "last_px": 28.92,
    "peak_close": 30.72,
-   "float_pct": 11.7,
-   "days": 14,
-   "exit_line": 26.48
+   "float_pct": 7.4,
+   "days": 15,
+   "exit_line": 26.49
   },
   {
    "signal_date": "2025-04-08",
@@ -4163,12 +4164,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-18",
-   "last_px": 26.83,
+   "last_date": "2026-08-19",
+   "last_px": 26.82,
    "peak_close": 26.83,
    "float_pct": 9.2,
-   "days": 14,
-   "exit_line": 24.27
+   "days": 15,
+   "exit_line": 24.32
   },
   {
    "signal_date": "2025-07-02",
@@ -4617,12 +4618,13 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-18",
-   "last_px": 231.9,
+   "last_date": "2026-08-19",
+   "last_px": 223.0,
    "peak_close": 242.33,
-   "float_pct": -1.3,
-   "days": 11,
-   "exit_line": 228.77
+   "float_pct": -5.1,
+   "days": 12,
+   "exit_line": 228.46,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2025-05-06",
@@ -6340,12 +6342,13 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-18",
-   "last_px": 43.94,
+   "last_date": "2026-08-19",
+   "last_px": 43.53,
    "peak_close": 45.1,
-   "float_pct": 0.3,
-   "days": 17,
-   "exit_line": 42.1
+   "float_pct": -0.6,
+   "days": 18,
+   "exit_line": 42.1,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2025-12-15",
@@ -12126,12 +12129,13 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-18",
-   "last_px": 17.24,
+   "last_date": "2026-08-19",
+   "last_px": 16.76,
    "peak_close": 18.58,
-   "float_pct": 0.0,
-   "days": 13,
-   "exit_line": 16.25
+   "float_pct": -2.8,
+   "days": 14,
+   "exit_line": 16.26,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2025-04-21",
@@ -13314,7 +13318,7 @@
    "status": "open",
    "signal_px": 405.2,
    "signal_ma60": 395.07,
-   "pending_exit": "止损：连续2日收在MA60下方",
+   "pending_exit": "止盈：收盘跌破MA20",
    "code": "300750.SZ",
    "name": "宁德时代",
    "ind": "电力设备",
@@ -13325,12 +13329,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-18",
-   "last_px": 396.26,
+   "last_date": "2026-08-19",
+   "last_px": 389.0,
    "peak_close": 399.98,
-   "float_pct": -3.4,
-   "days": 8,
-   "exit_line": 391.41
+   "float_pct": -5.1,
+   "days": 9,
+   "exit_line": 391.19
   },
   {
    "signal_date": "2025-06-30",
@@ -13424,12 +13428,13 @@
    },
    "entry_date": "2026-08-10",
    "entry_px": 12.88,
-   "last_date": "2026-08-18",
-   "last_px": 12.78,
+   "last_date": "2026-08-19",
+   "last_px": 12.3,
    "peak_close": 13.49,
-   "float_pct": -0.8,
-   "days": 6,
-   "exit_line": 12.51
+   "float_pct": -4.5,
+   "days": 7,
+   "exit_line": 12.46,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2025-06-30",
@@ -13923,12 +13928,13 @@
    },
    "entry_date": "2026-08-10",
    "entry_px": 18.93,
-   "last_date": "2026-08-18",
-   "last_px": 18.26,
+   "last_date": "2026-08-19",
+   "last_px": 17.82,
    "peak_close": 19.06,
-   "float_pct": -3.5,
-   "days": 6,
-   "exit_line": 18.37
+   "float_pct": -5.9,
+   "days": 7,
+   "exit_line": 18.34,
+   "pending_exit": "止损：连续2日收在MA60下方"
   },
   {
    "signal_date": "2025-05-13",
@@ -16059,12 +16065,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-18",
-   "last_px": 30.61,
-   "peak_close": 31.47,
-   "float_pct": 9.3,
-   "days": 11,
-   "exit_line": 27.1
+   "last_date": "2026-08-19",
+   "last_px": 32.6,
+   "peak_close": 32.6,
+   "float_pct": 16.4,
+   "days": 12,
+   "exit_line": 27.12
   },
   {
    "signal_date": "2025-06-11",
@@ -17574,12 +17580,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-18",
-   "last_px": 25.5,
+   "last_date": "2026-08-19",
+   "last_px": 25.59,
    "peak_close": 26.04,
-   "float_pct": 2.7,
-   "days": 7,
-   "exit_line": 24.41
+   "float_pct": 3.1,
+   "days": 8,
+   "exit_line": 24.44
   },
   {
    "signal_date": "2026-08-10",
@@ -17844,12 +17850,12 @@
    },
    "entry_date": "2026-08-11",
    "entry_px": 14.4,
-   "last_date": "2026-08-18",
-   "last_px": 14.26,
+   "last_date": "2026-08-19",
+   "last_px": 13.9,
    "peak_close": 14.6,
-   "float_pct": -1.0,
-   "days": 5,
-   "exit_line": 13.91
+   "float_pct": -3.5,
+   "days": 6,
+   "exit_line": 13.89
   },
   {
    "signal_date": "2026-08-10",
@@ -17929,12 +17935,13 @@
    },
    "entry_date": "2026-08-11",
    "entry_px": 395.0,
-   "last_date": "2026-08-18",
-   "last_px": 396.26,
+   "last_date": "2026-08-19",
+   "last_px": 389.0,
    "peak_close": 399.98,
-   "float_pct": 0.3,
-   "days": 5,
-   "exit_line": 391.41
+   "float_pct": -1.5,
+   "days": 6,
+   "exit_line": 391.19,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2026-08-10",
@@ -18047,12 +18054,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-18",
-   "last_px": 45.7,
-   "peak_close": 45.7,
-   "float_pct": 3.3,
-   "days": 2,
-   "exit_line": 44.18
+   "last_date": "2026-08-19",
+   "last_px": 46.52,
+   "peak_close": 46.52,
+   "float_pct": 5.2,
+   "days": 3,
+   "exit_line": 44.21
   },
   {
    "signal_date": "2026-07-27",
@@ -18096,12 +18103,13 @@
    },
    "entry_date": "2026-08-18",
    "entry_px": 393.0,
-   "last_date": "2026-08-18",
-   "last_px": 381.85,
+   "last_date": "2026-08-19",
+   "last_px": 343.93,
    "peak_close": 381.85,
-   "float_pct": -2.8,
-   "days": 0,
-   "exit_line": 387.23
+   "float_pct": -12.5,
+   "days": 1,
+   "exit_line": 385.97,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2026-08-17",
@@ -18120,12 +18128,13 @@
    },
    "entry_date": "2026-08-18",
    "entry_px": 67.7,
-   "last_date": "2026-08-18",
-   "last_px": 66.2,
+   "last_date": "2026-08-19",
+   "last_px": 61.83,
    "peak_close": 66.2,
-   "float_pct": -2.2,
-   "days": 0,
-   "exit_line": 67.71
+   "float_pct": -8.7,
+   "days": 1,
+   "exit_line": 67.57,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2026-08-17",
@@ -18144,12 +18153,13 @@
    },
    "entry_date": "2026-08-18",
    "entry_px": 362.0,
-   "last_date": "2026-08-18",
-   "last_px": 380.8,
+   "last_date": "2026-08-19",
+   "last_px": 313.53,
    "peak_close": 380.8,
-   "float_pct": 5.2,
-   "days": 0,
-   "exit_line": 359.92
+   "float_pct": -13.4,
+   "days": 1,
+   "exit_line": 359.51,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2026-08-17",
@@ -18168,12 +18178,13 @@
    },
    "entry_date": "2026-08-18",
    "entry_px": 37.58,
-   "last_date": "2026-08-18",
-   "last_px": 36.95,
+   "last_date": "2026-08-19",
+   "last_px": 36.84,
    "peak_close": 36.95,
-   "float_pct": -1.7,
-   "days": 0,
-   "exit_line": 36.96
+   "float_pct": -2.0,
+   "days": 1,
+   "exit_line": 37.01,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2026-08-17",
@@ -18192,16 +18203,17 @@
    },
    "entry_date": "2026-08-18",
    "entry_px": 18.8,
-   "last_date": "2026-08-18",
-   "last_px": 18.82,
+   "last_date": "2026-08-19",
+   "last_px": 18.0,
    "peak_close": 18.82,
-   "float_pct": 0.1,
-   "days": 0,
-   "exit_line": 18.79
+   "float_pct": -4.3,
+   "days": 1,
+   "exit_line": 18.76,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2026-08-18",
-   "status": "pending",
+   "status": "open",
    "signal_px": 30.71,
    "signal_ma60": 29.96,
    "code": "600096.SH",
@@ -18213,11 +18225,19 @@
     "stop_days": 2,
     "tp_dd": 0.08,
     "tp_ma": 20
-   }
+   },
+   "entry_date": "2026-08-19",
+   "entry_px": 30.65,
+   "last_date": "2026-08-19",
+   "last_px": 29.79,
+   "peak_close": 29.79,
+   "float_pct": -2.8,
+   "days": 0,
+   "exit_line": 29.92
   },
   {
    "signal_date": "2026-08-18",
-   "status": "pending",
+   "status": "open",
    "signal_px": 55.89,
    "signal_ma60": 54.58,
    "code": "600486.SH",
@@ -18229,11 +18249,19 @@
     "stop_days": 2,
     "tp_dd": 0.08,
     "tp_ma": 20
-   }
+   },
+   "entry_date": "2026-08-19",
+   "entry_px": 55.89,
+   "last_date": "2026-08-19",
+   "last_px": 55.44,
+   "peak_close": 55.44,
+   "float_pct": -0.8,
+   "days": 0,
+   "exit_line": 54.49
   },
   {
    "signal_date": "2026-08-18",
-   "status": "pending",
+   "status": "open",
    "signal_px": 18.97,
    "signal_ma60": 18.89,
    "code": "600031.SH",
@@ -18245,11 +18273,19 @@
     "stop_days": 2,
     "tp_dd": 0.08,
     "tp_ma": 20
-   }
+   },
+   "entry_date": "2026-08-19",
+   "entry_px": 18.98,
+   "last_date": "2026-08-19",
+   "last_px": 18.93,
+   "peak_close": 18.93,
+   "float_pct": -0.3,
+   "days": 0,
+   "exit_line": 18.89
   },
   {
    "signal_date": "2026-08-18",
-   "status": "pending",
+   "status": "open",
    "signal_px": 15.73,
    "signal_ma60": 15.69,
    "code": "603806.SH",
@@ -18261,7 +18297,15 @@
     "stop_days": 2,
     "tp_dd": 0.08,
     "tp_ma": 20
-   }
+   },
+   "entry_date": "2026-08-19",
+   "entry_px": 15.61,
+   "last_date": "2026-08-19",
+   "last_px": 15.16,
+   "peak_close": 15.16,
+   "float_pct": -2.9,
+   "days": 0,
+   "exit_line": 15.62
   }
  ]
 }
