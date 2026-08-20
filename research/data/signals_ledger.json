@@ -2215,7 +2215,7 @@
    "signal_date": "2026-07-28",
    "entry_date": "2026-07-29",
    "entry_px": 90.3,
-   "status": "open",
+   "status": "closed",
    "signal_px": 90.45,
    "signal_ma60": 89.29,
    "code": "000596.SZ",
@@ -2232,9 +2232,15 @@
    "last_px": 93.0,
    "peak_close": 100.42,
    "float_pct": 3.0,
-   "days": 15,
+   "days": 16,
    "exit_line": 87.86,
-   "pending_exit": "止盈：收盘跌破MA20"
+   "pending_exit": "止盈：收盘跌破MA20",
+   "exit_date": "2026-08-20",
+   "exit_px": 92.9,
+   "reason": "止盈：收盘跌破MA20",
+   "exit_signal_date": "2026-08-19",
+   "max_up": 11.2,
+   "pnl": 2.88
   },
   {
    "signal_date": "2025-04-09",
@@ -3184,12 +3190,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-19",
-   "last_px": 28.92,
+   "last_date": "2026-08-20",
+   "last_px": 28.72,
    "peak_close": 30.72,
-   "float_pct": 7.4,
-   "days": 15,
-   "exit_line": 26.49
+   "float_pct": 6.6,
+   "days": 16,
+   "exit_line": 26.48
   },
   {
    "signal_date": "2025-04-08",
@@ -4164,12 +4170,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-19",
-   "last_px": 26.82,
-   "peak_close": 26.83,
-   "float_pct": 9.2,
-   "days": 15,
-   "exit_line": 24.32
+   "last_date": "2026-08-20",
+   "last_px": 27.1,
+   "peak_close": 27.1,
+   "float_pct": 10.3,
+   "days": 16,
+   "exit_line": 24.38
   },
   {
    "signal_date": "2025-07-02",
@@ -4605,7 +4611,7 @@
    "signal_date": "2026-07-31",
    "entry_date": "2026-08-03",
    "entry_px": 234.95,
-   "status": "open",
+   "status": "closed",
    "signal_px": 234.96,
    "signal_ma60": 229.23,
    "code": "300033.SZ",
@@ -4622,9 +4628,15 @@
    "last_px": 223.0,
    "peak_close": 242.33,
    "float_pct": -5.1,
-   "days": 12,
+   "days": 13,
    "exit_line": 228.46,
-   "pending_exit": "止盈：收盘跌破MA20"
+   "pending_exit": "止盈：收盘跌破MA20",
+   "exit_date": "2026-08-20",
+   "exit_px": 223.92,
+   "reason": "止盈：收盘跌破MA20",
+   "exit_signal_date": "2026-08-19",
+   "max_up": 3.1,
+   "pnl": -4.69
   },
   {
    "signal_date": "2025-05-06",
@@ -6329,7 +6341,7 @@
    "signal_date": "2026-07-23",
    "entry_date": "2026-07-24",
    "entry_px": 43.8,
-   "status": "open",
+   "status": "closed",
    "signal_px": 43.34,
    "signal_ma60": 43.25,
    "code": "600760.SH",
@@ -6346,9 +6358,15 @@
    "last_px": 43.53,
    "peak_close": 45.1,
    "float_pct": -0.6,
-   "days": 18,
+   "days": 19,
    "exit_line": 42.1,
-   "pending_exit": "止盈：收盘跌破MA20"
+   "pending_exit": "止盈：收盘跌破MA20",
+   "exit_date": "2026-08-20",
+   "exit_px": 43.28,
+   "reason": "止盈：收盘跌破MA20",
+   "exit_signal_date": "2026-08-19",
+   "max_up": 3.0,
+   "pnl": -1.19
   },
   {
    "signal_date": "2025-12-15",
@@ -12116,7 +12134,7 @@
    "signal_date": "2026-07-29",
    "entry_date": "2026-07-30",
    "entry_px": 17.24,
-   "status": "open",
+   "status": "closed",
    "signal_px": 16.69,
    "signal_ma60": 16.21,
    "code": "002517.SZ",
@@ -12133,9 +12151,15 @@
    "last_px": 16.76,
    "peak_close": 18.58,
    "float_pct": -2.8,
-   "days": 14,
+   "days": 15,
    "exit_line": 16.26,
-   "pending_exit": "止盈：收盘跌破MA20"
+   "pending_exit": "止盈：收盘跌破MA20",
+   "exit_date": "2026-08-20",
+   "exit_px": 16.93,
+   "reason": "止盈：收盘跌破MA20",
+   "exit_signal_date": "2026-08-19",
+   "max_up": 7.8,
+   "pnl": -1.8
   },
   {
    "signal_date": "2025-04-21",
@@ -13315,7 +13339,7 @@
    "signal_date": "2026-08-05",
    "entry_date": "2026-08-06",
    "entry_px": 410.0,
-   "status": "open",
+   "status": "closed",
    "signal_px": 405.2,
    "signal_ma60": 395.07,
    "pending_exit": "止盈：收盘跌破MA20",
@@ -13333,8 +13357,14 @@
    "last_px": 389.0,
    "peak_close": 399.98,
    "float_pct": -5.1,
-   "days": 9,
-   "exit_line": 391.19
+   "days": 10,
+   "exit_line": 391.19,
+   "exit_date": "2026-08-20",
+   "exit_px": 391.51,
+   "reason": "止盈：收盘跌破MA20",
+   "exit_signal_date": "2026-08-19",
+   "max_up": -2.4,
+   "pnl": -4.51
   },
   {
    "signal_date": "2025-06-30",
@@ -13413,7 +13443,7 @@
   },
   {
    "signal_date": "2026-08-07",
-   "status": "open",
+   "status": "closed",
    "signal_px": 13.08,
    "signal_ma60": 12.87,
    "code": "600438.SH",
@@ -13432,9 +13462,15 @@
    "last_px": 12.3,
    "peak_close": 13.49,
    "float_pct": -4.5,
-   "days": 7,
+   "days": 8,
    "exit_line": 12.46,
-   "pending_exit": "止盈：收盘跌破MA20"
+   "pending_exit": "止盈：收盘跌破MA20",
+   "exit_date": "2026-08-20",
+   "exit_px": 12.32,
+   "reason": "止盈：收盘跌破MA20",
+   "exit_signal_date": "2026-08-19",
+   "max_up": 4.7,
+   "pnl": -4.35
   },
   {
    "signal_date": "2025-06-30",
@@ -13913,7 +13949,7 @@
   },
   {
    "signal_date": "2026-08-07",
-   "status": "open",
+   "status": "closed",
    "signal_px": 18.97,
    "signal_ma60": 18.63,
    "code": "688303.SH",
@@ -13932,9 +13968,15 @@
    "last_px": 17.82,
    "peak_close": 19.06,
    "float_pct": -5.9,
-   "days": 7,
+   "days": 8,
    "exit_line": 18.34,
-   "pending_exit": "止损：连续2日收在MA60下方"
+   "pending_exit": "止损：连续2日收在MA60下方",
+   "exit_date": "2026-08-20",
+   "exit_px": 17.89,
+   "reason": "止损：连续2日收在MA60下方",
+   "exit_signal_date": "2026-08-19",
+   "max_up": 0.7,
+   "pnl": -5.49
   },
   {
    "signal_date": "2025-05-13",
@@ -16065,12 +16107,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-19",
-   "last_px": 32.6,
-   "peak_close": 32.6,
-   "float_pct": 16.4,
-   "days": 12,
-   "exit_line": 27.12
+   "last_date": "2026-08-20",
+   "last_px": 35.4,
+   "peak_close": 35.4,
+   "float_pct": 26.4,
+   "days": 13,
+   "exit_line": 27.21
   },
   {
    "signal_date": "2025-06-11",
@@ -17580,12 +17622,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-19",
-   "last_px": 25.59,
+   "last_date": "2026-08-20",
+   "last_px": 25.55,
    "peak_close": 26.04,
-   "float_pct": 3.1,
-   "days": 8,
-   "exit_line": 24.44
+   "float_pct": 2.9,
+   "days": 9,
+   "exit_line": 24.45
   },
   {
    "signal_date": "2026-08-10",
@@ -17850,12 +17892,12 @@
    },
    "entry_date": "2026-08-11",
    "entry_px": 14.4,
-   "last_date": "2026-08-19",
-   "last_px": 13.9,
+   "last_date": "2026-08-20",
+   "last_px": 13.84,
    "peak_close": 14.6,
-   "float_pct": -3.5,
-   "days": 6,
-   "exit_line": 13.89
+   "float_pct": -3.9,
+   "days": 7,
+   "exit_line": 13.87
   },
   {
    "signal_date": "2026-08-10",
@@ -17920,7 +17962,7 @@
   },
   {
    "signal_date": "2026-08-10",
-   "status": "open",
+   "status": "closed",
    "signal_px": 393.87,
    "signal_ma60": 393.16,
    "code": "300750.SZ",
@@ -17939,9 +17981,15 @@
    "last_px": 389.0,
    "peak_close": 399.98,
    "float_pct": -1.5,
-   "days": 6,
+   "days": 7,
    "exit_line": 391.19,
-   "pending_exit": "止盈：收盘跌破MA20"
+   "pending_exit": "止盈：收盘跌破MA20",
+   "exit_date": "2026-08-20",
+   "exit_px": 391.51,
+   "reason": "止盈：收盘跌破MA20",
+   "exit_signal_date": "2026-08-19",
+   "max_up": 1.3,
+   "pnl": -0.88
   },
   {
    "signal_date": "2026-08-10",
@@ -18054,12 +18102,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-19",
-   "last_px": 46.52,
-   "peak_close": 46.52,
-   "float_pct": 5.2,
-   "days": 3,
-   "exit_line": 44.21
+   "last_date": "2026-08-20",
+   "last_px": 46.55,
+   "peak_close": 46.55,
+   "float_pct": 5.3,
+   "days": 4,
+   "exit_line": 44.22
   },
   {
    "signal_date": "2026-07-27",
@@ -18088,7 +18136,7 @@
   },
   {
    "signal_date": "2026-08-17",
-   "status": "open",
+   "status": "closed",
    "signal_px": 392.9,
    "signal_ma60": 387.53,
    "code": "002916.SZ",
@@ -18107,13 +18155,19 @@
    "last_px": 343.93,
    "peak_close": 381.85,
    "float_pct": -12.5,
-   "days": 1,
+   "days": 2,
    "exit_line": 385.97,
-   "pending_exit": "止盈：收盘跌破MA20"
+   "pending_exit": "止盈：收盘跌破MA20",
+   "exit_date": "2026-08-20",
+   "exit_px": 349.06,
+   "reason": "止盈：收盘跌破MA20",
+   "exit_signal_date": "2026-08-19",
+   "max_up": -2.8,
+   "pnl": -11.18
   },
   {
    "signal_date": "2026-08-17",
-   "status": "open",
+   "status": "closed",
    "signal_px": 68.23,
    "signal_ma60": 67.78,
    "code": "601138.SH",
@@ -18132,13 +18186,19 @@
    "last_px": 61.83,
    "peak_close": 66.2,
    "float_pct": -8.7,
-   "days": 1,
+   "days": 2,
    "exit_line": 67.57,
-   "pending_exit": "止盈：收盘跌破MA20"
+   "pending_exit": "止盈：收盘跌破MA20",
+   "exit_date": "2026-08-20",
+   "exit_px": 62.5,
+   "reason": "止盈：收盘跌破MA20",
+   "exit_signal_date": "2026-08-19",
+   "max_up": -2.2,
+   "pnl": -7.68
   },
   {
    "signal_date": "2026-08-17",
-   "status": "open",
+   "status": "closed",
    "signal_px": 362.17,
    "signal_ma60": 359.39,
    "code": "688017.SH",
@@ -18157,13 +18217,19 @@
    "last_px": 313.53,
    "peak_close": 380.8,
    "float_pct": -13.4,
-   "days": 1,
+   "days": 2,
    "exit_line": 359.51,
-   "pending_exit": "止盈：收盘跌破MA20"
+   "pending_exit": "止盈：收盘跌破MA20",
+   "exit_date": "2026-08-20",
+   "exit_px": 318.0,
+   "reason": "止盈：收盘跌破MA20",
+   "exit_signal_date": "2026-08-19",
+   "max_up": 5.2,
+   "pnl": -12.15
   },
   {
    "signal_date": "2026-08-17",
-   "status": "open",
+   "status": "closed",
    "signal_px": 37.6,
    "signal_ma60": 36.91,
    "code": "601628.SH",
@@ -18182,13 +18248,19 @@
    "last_px": 36.84,
    "peak_close": 36.95,
    "float_pct": -2.0,
-   "days": 1,
+   "days": 2,
    "exit_line": 37.01,
-   "pending_exit": "止盈：收盘跌破MA20"
+   "pending_exit": "止盈：收盘跌破MA20",
+   "exit_date": "2026-08-20",
+   "exit_px": 36.53,
+   "reason": "止盈：收盘跌破MA20",
+   "exit_signal_date": "2026-08-19",
+   "max_up": -1.7,
+   "pnl": -2.79
   },
   {
    "signal_date": "2026-08-17",
-   "status": "open",
+   "status": "closed",
    "signal_px": 19.13,
    "signal_ma60": 18.8,
    "code": "603993.SH",
@@ -18207,9 +18279,15 @@
    "last_px": 18.0,
    "peak_close": 18.82,
    "float_pct": -4.3,
-   "days": 1,
+   "days": 2,
    "exit_line": 18.76,
-   "pending_exit": "止盈：收盘跌破MA20"
+   "pending_exit": "止盈：收盘跌破MA20",
+   "exit_date": "2026-08-20",
+   "exit_px": 18.48,
+   "reason": "止盈：收盘跌破MA20",
+   "exit_signal_date": "2026-08-19",
+   "max_up": 0.1,
+   "pnl": -1.7
   },
   {
    "signal_date": "2026-08-18",
@@ -18228,12 +18306,12 @@
    },
    "entry_date": "2026-08-19",
    "entry_px": 30.65,
-   "last_date": "2026-08-19",
-   "last_px": 29.79,
-   "peak_close": 29.79,
-   "float_pct": -2.8,
-   "days": 0,
-   "exit_line": 29.92
+   "last_date": "2026-08-20",
+   "last_px": 29.83,
+   "peak_close": 29.83,
+   "float_pct": -2.7,
+   "days": 1,
+   "exit_line": 29.9
   },
   {
    "signal_date": "2026-08-18",
@@ -18252,12 +18330,12 @@
    },
    "entry_date": "2026-08-19",
    "entry_px": 55.89,
-   "last_date": "2026-08-19",
-   "last_px": 55.44,
-   "peak_close": 55.44,
-   "float_pct": -0.8,
-   "days": 0,
-   "exit_line": 54.49
+   "last_date": "2026-08-20",
+   "last_px": 55.5,
+   "peak_close": 55.5,
+   "float_pct": -0.7,
+   "days": 1,
+   "exit_line": 54.44
   },
   {
    "signal_date": "2026-08-18",
@@ -18276,12 +18354,13 @@
    },
    "entry_date": "2026-08-19",
    "entry_px": 18.98,
-   "last_date": "2026-08-19",
-   "last_px": 18.93,
-   "peak_close": 18.93,
-   "float_pct": -0.3,
-   "days": 0,
-   "exit_line": 18.89
+   "last_date": "2026-08-20",
+   "last_px": 19.05,
+   "peak_close": 19.05,
+   "float_pct": 0.4,
+   "days": 1,
+   "exit_line": 18.9,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2026-08-18",
@@ -18300,12 +18379,76 @@
    },
    "entry_date": "2026-08-19",
    "entry_px": 15.61,
-   "last_date": "2026-08-19",
-   "last_px": 15.16,
-   "peak_close": 15.16,
-   "float_pct": -2.9,
-   "days": 0,
-   "exit_line": 15.62
+   "last_date": "2026-08-20",
+   "last_px": 15.59,
+   "peak_close": 15.59,
+   "float_pct": -0.1,
+   "days": 1,
+   "exit_line": 15.58
+  },
+  {
+   "signal_date": "2026-08-20",
+   "status": "pending",
+   "signal_px": 90.48,
+   "signal_ma60": 89.99,
+   "code": "002594.SZ",
+   "name": "比亚迪",
+   "ind": "汽车",
+   "zone": 2.0,
+   "rules": {
+    "entry_band": 0.03,
+    "stop_days": 2,
+    "tp_dd": 0.08,
+    "tp_ma": 20
+   }
+  },
+  {
+   "signal_date": "2026-08-20",
+   "status": "pending",
+   "signal_px": 5.41,
+   "signal_ma60": 5.41,
+   "code": "601238.SH",
+   "name": "广汽集团",
+   "ind": "汽车",
+   "zone": 2.0,
+   "rules": {
+    "entry_band": 0.03,
+    "stop_days": 2,
+    "tp_dd": 0.08,
+    "tp_ma": 20
+   }
+  },
+  {
+   "signal_date": "2026-08-20",
+   "status": "pending",
+   "signal_px": 29.92,
+   "signal_ma60": 29.1,
+   "code": "000963.SZ",
+   "name": "华东医药",
+   "ind": "医药生物",
+   "zone": 3.6,
+   "rules": {
+    "entry_band": 0.03,
+    "stop_days": 2,
+    "tp_dd": 0.08,
+    "tp_ma": 20
+   }
+  },
+  {
+   "signal_date": "2026-08-20",
+   "status": "pending",
+   "signal_px": 52.14,
+   "signal_ma60": 52.06,
+   "code": "601318.SH",
+   "name": "中国平安",
+   "ind": "非银金融",
+   "zone": 3.4,
+   "rules": {
+    "entry_band": 0.03,
+    "stop_days": 2,
+    "tp_dd": 0.08,
+    "tp_ma": 20
+   }
   }
  ]
 }
