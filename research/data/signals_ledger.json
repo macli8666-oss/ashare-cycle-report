@@ -4177,12 +4177,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-26",
-   "last_px": 26.36,
-   "peak_close": 27.1,
-   "float_pct": 7.3,
-   "days": 20,
-   "exit_line": 24.57
+   "last_date": "2026-08-27",
+   "last_px": 27.39,
+   "peak_close": 27.39,
+   "float_pct": 11.5,
+   "days": 21,
+   "exit_line": 24.63
   },
   {
    "signal_date": "2025-07-02",
@@ -16114,12 +16114,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-26",
-   "last_px": 34.49,
+   "last_date": "2026-08-27",
+   "last_px": 34.89,
    "peak_close": 37.05,
-   "float_pct": 23.2,
-   "days": 17,
-   "exit_line": 27.65
+   "float_pct": 24.6,
+   "days": 18,
+   "exit_line": 27.74
   },
   {
    "signal_date": "2025-06-11",
@@ -17629,11 +17629,11 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-26",
-   "last_px": 26.35,
-   "peak_close": 26.52,
-   "float_pct": 6.1,
-   "days": 13,
+   "last_date": "2026-08-27",
+   "last_px": 27.0,
+   "peak_close": 27.0,
+   "float_pct": 8.7,
+   "days": 14,
    "exit_line": 24.48
   },
   {
@@ -18116,12 +18116,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-08-26",
-   "last_px": 47.26,
-   "peak_close": 47.26,
-   "float_pct": 6.9,
-   "days": 8,
-   "exit_line": 44.17
+   "last_date": "2026-08-27",
+   "last_px": 47.8,
+   "peak_close": 47.8,
+   "float_pct": 8.1,
+   "days": 9,
+   "exit_line": 44.16
   },
   {
    "signal_date": "2026-07-27",
@@ -18537,12 +18537,12 @@
    },
    "entry_date": "2026-08-21",
    "entry_px": 53.01,
-   "last_date": "2026-08-26",
-   "last_px": 56.13,
+   "last_date": "2026-08-27",
+   "last_px": 55.87,
    "peak_close": 56.13,
-   "float_pct": 5.9,
-   "days": 3,
-   "exit_line": 52.16
+   "float_pct": 5.4,
+   "days": 4,
+   "exit_line": 52.19
   },
   {
    "signal_date": "2026-08-21",
@@ -18773,11 +18773,11 @@
    },
    "entry_date": "2026-08-25",
    "entry_px": 30.2,
-   "last_date": "2026-08-26",
-   "last_px": 30.23,
-   "peak_close": 30.23,
-   "float_pct": 0.1,
-   "days": 1,
+   "last_date": "2026-08-27",
+   "last_px": 30.95,
+   "peak_close": 30.95,
+   "float_pct": 2.5,
+   "days": 2,
    "exit_line": 29.83
   },
   {
@@ -18797,12 +18797,12 @@
    },
    "entry_date": "2026-08-25",
    "entry_px": 31.01,
-   "last_date": "2026-08-26",
-   "last_px": 31.98,
-   "peak_close": 31.98,
-   "float_pct": 3.1,
-   "days": 1,
-   "exit_line": 30.96
+   "last_date": "2026-08-27",
+   "last_px": 32.0,
+   "peak_close": 32.0,
+   "float_pct": 3.2,
+   "days": 2,
+   "exit_line": 30.97
   },
   {
    "signal_date": "2026-08-24",
@@ -18821,12 +18821,12 @@
    },
    "entry_date": "2026-08-25",
    "entry_px": 37.67,
-   "last_date": "2026-08-26",
-   "last_px": 38.58,
-   "peak_close": 38.58,
-   "float_pct": 2.4,
-   "days": 1,
-   "exit_line": 37.35
+   "last_date": "2026-08-27",
+   "last_px": 38.61,
+   "peak_close": 38.61,
+   "float_pct": 2.5,
+   "days": 2,
+   "exit_line": 37.44
   },
   {
    "signal_date": "2026-08-24",
@@ -18845,12 +18845,12 @@
    },
    "entry_date": "2026-08-25",
    "entry_px": 9.42,
-   "last_date": "2026-08-26",
-   "last_px": 9.59,
-   "peak_close": 9.59,
-   "float_pct": 1.8,
-   "days": 1,
-   "exit_line": 9.38
+   "last_date": "2026-08-27",
+   "last_px": 9.65,
+   "peak_close": 9.65,
+   "float_pct": 2.4,
+   "days": 2,
+   "exit_line": 9.34
   },
   {
    "signal_date": "2026-08-24",
@@ -18869,12 +18869,12 @@
    },
    "entry_date": "2026-08-25",
    "entry_px": 18.8,
-   "last_date": "2026-08-26",
-   "last_px": 19.59,
+   "last_date": "2026-08-27",
+   "last_px": 19.51,
    "peak_close": 19.59,
-   "float_pct": 4.2,
-   "days": 1,
-   "exit_line": 18.74
+   "float_pct": 3.8,
+   "days": 2,
+   "exit_line": 18.73
   },
   {
    "signal_date": "2026-08-25",
@@ -18893,12 +18893,12 @@
    },
    "entry_date": "2026-08-26",
    "entry_px": 6.99,
-   "last_date": "2026-08-26",
-   "last_px": 7.01,
-   "peak_close": 7.01,
-   "float_pct": 0.3,
-   "days": 0,
-   "exit_line": 6.87
+   "last_date": "2026-08-27",
+   "last_px": 7.07,
+   "peak_close": 7.07,
+   "float_pct": 1.1,
+   "days": 1,
+   "exit_line": 6.86
   },
   {
    "signal_date": "2026-08-25",
@@ -18917,12 +18917,13 @@
    },
    "entry_date": "2026-08-26",
    "entry_px": 19.0,
-   "last_date": "2026-08-26",
-   "last_px": 18.86,
-   "peak_close": 18.86,
-   "float_pct": -0.7,
-   "days": 0,
-   "exit_line": 18.96
+   "last_date": "2026-08-27",
+   "last_px": 19.06,
+   "peak_close": 19.06,
+   "float_pct": 0.3,
+   "days": 1,
+   "exit_line": 18.97,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2026-08-25",
@@ -18941,16 +18942,17 @@
    },
    "entry_date": "2026-08-26",
    "entry_px": 14.12,
-   "last_date": "2026-08-26",
-   "last_px": 13.95,
+   "last_date": "2026-08-27",
+   "last_px": 13.92,
    "peak_close": 13.95,
-   "float_pct": -1.2,
-   "days": 0,
-   "exit_line": 13.81
+   "float_pct": -1.4,
+   "days": 1,
+   "exit_line": 13.79,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2026-08-26",
-   "status": "pending",
+   "status": "open",
    "signal_px": 30.23,
    "signal_ma60": 29.83,
    "code": "600096.SH",
@@ -18962,11 +18964,19 @@
     "stop_days": 2,
     "tp_dd": 0.08,
     "tp_ma": 20
-   }
+   },
+   "entry_date": "2026-08-27",
+   "entry_px": 30.25,
+   "last_date": "2026-08-27",
+   "last_px": 30.95,
+   "peak_close": 30.95,
+   "float_pct": 2.3,
+   "days": 0,
+   "exit_line": 29.83
   },
   {
    "signal_date": "2026-08-26",
-   "status": "pending",
+   "status": "open",
    "signal_px": 16.23,
    "signal_ma60": 15.99,
    "code": "002601.SZ",
@@ -18978,11 +18988,19 @@
     "stop_days": 2,
     "tp_dd": 0.08,
     "tp_ma": 20
-   }
+   },
+   "entry_date": "2026-08-27",
+   "entry_px": 16.22,
+   "last_date": "2026-08-27",
+   "last_px": 16.25,
+   "peak_close": 16.25,
+   "float_pct": 0.2,
+   "days": 0,
+   "exit_line": 16.02
   },
   {
    "signal_date": "2026-08-26",
-   "status": "pending",
+   "status": "open",
    "signal_px": 14.8,
    "signal_ma60": 14.75,
    "code": "603477.SH",
@@ -18994,11 +19012,19 @@
     "stop_days": 2,
     "tp_dd": 0.08,
     "tp_ma": 20
-   }
+   },
+   "entry_date": "2026-08-27",
+   "entry_px": 14.76,
+   "last_date": "2026-08-27",
+   "last_px": 15.14,
+   "peak_close": 15.14,
+   "float_pct": 2.6,
+   "days": 0,
+   "exit_line": 14.74
   },
   {
    "signal_date": "2026-08-26",
-   "status": "pending",
+   "status": "open",
    "signal_px": 27.77,
    "signal_ma60": 27.71,
    "code": "600030.SH",
@@ -19010,17 +19036,113 @@
     "stop_days": 2,
     "tp_dd": 0.08,
     "tp_ma": 20
-   }
+   },
+   "entry_date": "2026-08-27",
+   "entry_px": 27.67,
+   "last_date": "2026-08-27",
+   "last_px": 27.93,
+   "peak_close": 27.93,
+   "float_pct": 0.9,
+   "days": 0,
+   "exit_line": 27.75
   },
   {
    "signal_date": "2026-08-26",
-   "status": "pending",
+   "status": "open",
    "signal_px": 9.59,
    "signal_ma60": 9.38,
    "code": "601600.SH",
    "name": "中国铝业",
    "ind": "有色金属",
    "zone": 4.0,
+   "rules": {
+    "entry_band": 0.03,
+    "stop_days": 2,
+    "tp_dd": 0.08,
+    "tp_ma": 20
+   },
+   "entry_date": "2026-08-27",
+   "entry_px": 9.55,
+   "last_date": "2026-08-27",
+   "last_px": 9.65,
+   "peak_close": 9.65,
+   "float_pct": 1.0,
+   "days": 0,
+   "exit_line": 9.34
+  },
+  {
+   "signal_date": "2026-08-27",
+   "status": "pending",
+   "signal_px": 55.08,
+   "signal_ma60": 54.18,
+   "code": "600486.SH",
+   "name": "扬农化工",
+   "ind": "基础化工",
+   "zone": 2.8,
+   "rules": {
+    "entry_band": 0.03,
+    "stop_days": 2,
+    "tp_dd": 0.08,
+    "tp_ma": 20
+   }
+  },
+  {
+   "signal_date": "2026-08-27",
+   "status": "pending",
+   "signal_px": 233.22,
+   "signal_ma60": 227.61,
+   "code": "300033.SZ",
+   "name": "同花顺",
+   "ind": "计算机",
+   "zone": 3.1,
+   "rules": {
+    "entry_band": 0.03,
+    "stop_days": 2,
+    "tp_dd": 0.08,
+    "tp_ma": 20
+   }
+  },
+  {
+   "signal_date": "2026-08-27",
+   "status": "pending",
+   "signal_px": 22.11,
+   "signal_ma60": 21.84,
+   "code": "600570.SH",
+   "name": "恒生电子",
+   "ind": "计算机",
+   "zone": 3.1,
+   "rules": {
+    "entry_band": 0.03,
+    "stop_days": 2,
+    "tp_dd": 0.08,
+    "tp_ma": 20
+   }
+  },
+  {
+   "signal_date": "2026-08-27",
+   "status": "pending",
+   "signal_px": 238.22,
+   "signal_ma60": 234.97,
+   "code": "688111.SH",
+   "name": "金山办公",
+   "ind": "计算机",
+   "zone": 3.1,
+   "rules": {
+    "entry_band": 0.03,
+    "stop_days": 2,
+    "tp_dd": 0.08,
+    "tp_ma": 20
+   }
+  },
+  {
+   "signal_date": "2026-08-27",
+   "status": "pending",
+   "signal_px": 19.06,
+   "signal_ma60": 18.97,
+   "code": "600031.SH",
+   "name": "三一重工",
+   "ind": "机械设备",
+   "zone": 3.2,
    "rules": {
     "entry_band": 0.03,
     "stop_days": 2,
