@@ -4177,12 +4177,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-09-01",
-   "last_px": 28.62,
+   "last_date": "2026-09-02",
+   "last_px": 27.49,
    "peak_close": 28.62,
-   "float_pct": 16.5,
-   "days": 24,
-   "exit_line": 24.86
+   "float_pct": 11.9,
+   "days": 25,
+   "exit_line": 24.91
   },
   {
    "signal_date": "2025-07-02",
@@ -16114,12 +16114,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-09-01",
-   "last_px": 36.89,
-   "peak_close": 37.85,
-   "float_pct": 31.8,
-   "days": 21,
-   "exit_line": 28.19
+   "last_date": "2026-09-02",
+   "last_px": 37.89,
+   "peak_close": 37.89,
+   "float_pct": 35.3,
+   "days": 22,
+   "exit_line": 28.36
   },
   {
    "signal_date": "2025-06-11",
@@ -17629,12 +17629,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-09-01",
-   "last_px": 26.72,
+   "last_date": "2026-09-02",
+   "last_px": 26.1,
    "peak_close": 27.62,
-   "float_pct": 7.6,
-   "days": 17,
-   "exit_line": 24.46
+   "float_pct": 5.1,
+   "days": 18,
+   "exit_line": 24.45
   },
   {
    "signal_date": "2026-08-10",
@@ -18116,12 +18116,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-09-01",
-   "last_px": 48.3,
+   "last_date": "2026-09-02",
+   "last_px": 48.05,
    "peak_close": 48.78,
-   "float_pct": 9.2,
-   "days": 12,
-   "exit_line": 44.1
+   "float_pct": 8.7,
+   "days": 13,
+   "exit_line": 44.08
   },
   {
    "signal_date": "2026-07-27",
@@ -18537,12 +18537,12 @@
    },
    "entry_date": "2026-08-21",
    "entry_px": 53.01,
-   "last_date": "2026-09-01",
-   "last_px": 57.23,
+   "last_date": "2026-09-02",
+   "last_px": 56.63,
    "peak_close": 57.23,
-   "float_pct": 8.0,
-   "days": 7,
-   "exit_line": 52.34
+   "float_pct": 6.8,
+   "days": 8,
+   "exit_line": 52.38
   },
   {
    "signal_date": "2026-08-21",
@@ -18773,12 +18773,12 @@
    },
    "entry_date": "2026-08-25",
    "entry_px": 30.2,
-   "last_date": "2026-09-01",
-   "last_px": 31.96,
+   "last_date": "2026-09-02",
+   "last_px": 30.91,
    "peak_close": 31.96,
-   "float_pct": 5.8,
-   "days": 5,
-   "exit_line": 29.93
+   "float_pct": 2.4,
+   "days": 6,
+   "exit_line": 29.96
   },
   {
    "signal_date": "2026-08-24",
@@ -18797,12 +18797,12 @@
    },
    "entry_date": "2026-08-25",
    "entry_px": 31.01,
-   "last_date": "2026-09-01",
-   "last_px": 33.07,
+   "last_date": "2026-09-02",
+   "last_px": 32.83,
    "peak_close": 33.07,
-   "float_pct": 6.6,
-   "days": 5,
-   "exit_line": 31.03
+   "float_pct": 5.9,
+   "days": 6,
+   "exit_line": 31.05
   },
   {
    "signal_date": "2026-08-24",
@@ -18821,12 +18821,12 @@
    },
    "entry_date": "2026-08-25",
    "entry_px": 37.67,
-   "last_date": "2026-09-01",
-   "last_px": 39.07,
+   "last_date": "2026-09-02",
+   "last_px": 38.15,
    "peak_close": 39.07,
-   "float_pct": 3.7,
-   "days": 5,
-   "exit_line": 37.74
+   "float_pct": 1.3,
+   "days": 6,
+   "exit_line": 37.82
   },
   {
    "signal_date": "2026-08-24",
@@ -18845,12 +18845,12 @@
    },
    "entry_date": "2026-08-25",
    "entry_px": 9.42,
-   "last_date": "2026-09-01",
-   "last_px": 9.79,
+   "last_date": "2026-09-02",
+   "last_px": 9.6,
    "peak_close": 9.82,
-   "float_pct": 3.9,
-   "days": 5,
-   "exit_line": 9.3
+   "float_pct": 1.9,
+   "days": 6,
+   "exit_line": 9.29
   },
   {
    "signal_date": "2026-08-24",
@@ -18900,11 +18900,11 @@
    },
    "entry_date": "2026-08-26",
    "entry_px": 6.99,
-   "last_date": "2026-09-01",
-   "last_px": 7.21,
+   "last_date": "2026-09-02",
+   "last_px": 7.06,
    "peak_close": 7.21,
-   "float_pct": 3.1,
-   "days": 4,
+   "float_pct": 1.0,
+   "days": 5,
    "exit_line": 6.86
   },
   {
@@ -18986,12 +18986,12 @@
    },
    "entry_date": "2026-08-27",
    "entry_px": 30.25,
-   "last_date": "2026-09-01",
-   "last_px": 31.96,
+   "last_date": "2026-09-02",
+   "last_px": 30.91,
    "peak_close": 31.96,
-   "float_pct": 5.7,
-   "days": 3,
-   "exit_line": 29.93
+   "float_pct": 2.2,
+   "days": 4,
+   "exit_line": 29.96
   },
   {
    "signal_date": "2026-08-26",
@@ -19010,12 +19010,13 @@
    },
    "entry_date": "2026-08-27",
    "entry_px": 16.22,
-   "last_date": "2026-09-01",
-   "last_px": 16.26,
+   "last_date": "2026-09-02",
+   "last_px": 15.59,
    "peak_close": 16.6,
-   "float_pct": 0.2,
-   "days": 3,
-   "exit_line": 16.14
+   "float_pct": -3.9,
+   "days": 4,
+   "exit_line": 16.15,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2026-08-26",
@@ -19034,12 +19035,12 @@
    },
    "entry_date": "2026-08-27",
    "entry_px": 14.76,
-   "last_date": "2026-09-01",
-   "last_px": 15.42,
+   "last_date": "2026-09-02",
+   "last_px": 15.1,
    "peak_close": 15.42,
-   "float_pct": 4.5,
-   "days": 3,
-   "exit_line": 14.78
+   "float_pct": 2.3,
+   "days": 4,
+   "exit_line": 14.8
   },
   {
    "signal_date": "2026-08-26",
@@ -19058,12 +19059,13 @@
    },
    "entry_date": "2026-08-27",
    "entry_px": 27.67,
-   "last_date": "2026-09-01",
-   "last_px": 28.02,
+   "last_date": "2026-09-02",
+   "last_px": 27.47,
    "peak_close": 28.02,
-   "float_pct": 1.3,
-   "days": 3,
-   "exit_line": 27.87
+   "float_pct": -0.7,
+   "days": 4,
+   "exit_line": 27.9,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2026-08-26",
@@ -19082,12 +19084,12 @@
    },
    "entry_date": "2026-08-27",
    "entry_px": 9.55,
-   "last_date": "2026-09-01",
-   "last_px": 9.79,
+   "last_date": "2026-09-02",
+   "last_px": 9.6,
    "peak_close": 9.82,
-   "float_pct": 2.5,
-   "days": 3,
-   "exit_line": 9.3
+   "float_pct": 0.5,
+   "days": 4,
+   "exit_line": 9.29
   },
   {
    "signal_date": "2026-08-27",
@@ -19106,12 +19108,13 @@
    },
    "entry_date": "2026-08-28",
    "entry_px": 55.13,
-   "last_date": "2026-09-01",
-   "last_px": 55.98,
+   "last_date": "2026-09-02",
+   "last_px": 54.22,
    "peak_close": 56.83,
-   "float_pct": 1.5,
-   "days": 2,
-   "exit_line": 54.08
+   "float_pct": -1.7,
+   "days": 3,
+   "exit_line": 54.07,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2026-08-27",
@@ -19223,11 +19226,11 @@
    },
    "entry_date": "2026-08-28",
    "entry_px": 18.96,
-   "last_date": "2026-09-01",
-   "last_px": 20.22,
+   "last_date": "2026-09-02",
+   "last_px": 19.63,
    "peak_close": 20.22,
-   "float_pct": 6.6,
-   "days": 2,
+   "float_pct": 3.5,
+   "days": 3,
    "exit_line": 19.02
   },
   {
@@ -19247,12 +19250,13 @@
    },
    "entry_date": "2026-08-31",
    "entry_px": 5.32,
-   "last_date": "2026-09-01",
-   "last_px": 5.24,
+   "last_date": "2026-09-02",
+   "last_px": 5.12,
    "peak_close": 5.24,
-   "float_pct": -1.5,
-   "days": 1,
-   "exit_line": 5.29
+   "float_pct": -3.8,
+   "days": 2,
+   "exit_line": 5.28,
+   "pending_exit": "止损：连续2日收在MA60下方"
   },
   {
    "signal_date": "2026-08-28",
@@ -19271,12 +19275,13 @@
    },
    "entry_date": "2026-08-31",
    "entry_px": 119.0,
-   "last_date": "2026-09-01",
-   "last_px": 120.67,
+   "last_date": "2026-09-02",
+   "last_px": 118.28,
    "peak_close": 120.67,
-   "float_pct": 1.4,
-   "days": 1,
-   "exit_line": 117.42
+   "float_pct": -0.6,
+   "days": 2,
+   "exit_line": 117.45,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2026-08-28",
@@ -19295,12 +19300,13 @@
    },
    "entry_date": "2026-08-31",
    "entry_px": 34.8,
-   "last_date": "2026-09-01",
-   "last_px": 34.43,
+   "last_date": "2026-09-02",
+   "last_px": 33.93,
    "peak_close": 34.43,
-   "float_pct": -1.1,
-   "days": 1,
-   "exit_line": 34.59
+   "float_pct": -2.5,
+   "days": 2,
+   "exit_line": 34.58,
+   "pending_exit": "止损：连续2日收在MA60下方"
   },
   {
    "signal_date": "2026-08-25",
@@ -19419,16 +19425,17 @@
    },
    "entry_date": "2026-09-01",
    "entry_px": 11.51,
-   "last_date": "2026-09-01",
-   "last_px": 11.65,
+   "last_date": "2026-09-02",
+   "last_px": 11.23,
    "peak_close": 11.65,
-   "float_pct": 1.2,
-   "days": 0,
-   "exit_line": 11.59
+   "float_pct": -2.4,
+   "days": 1,
+   "exit_line": 11.58,
+   "pending_exit": "止盈：收盘跌破MA20"
   },
   {
    "signal_date": "2026-09-01",
-   "status": "pending",
+   "status": "open",
    "signal_px": 10.49,
    "signal_ma60": 10.39,
    "code": "600104.SH",
@@ -19440,11 +19447,19 @@
     "stop_days": 2,
     "tp_dd": 0.08,
     "tp_ma": 20
-   }
+   },
+   "entry_date": "2026-09-02",
+   "entry_px": 10.46,
+   "last_date": "2026-09-02",
+   "last_px": 10.36,
+   "peak_close": 10.36,
+   "float_pct": -1.0,
+   "days": 0,
+   "exit_line": 10.38
   },
   {
    "signal_date": "2026-09-01",
-   "status": "pending",
+   "status": "open",
    "signal_px": 120.67,
    "signal_ma60": 117.42,
    "code": "600809.SH",
@@ -19456,11 +19471,19 @@
     "stop_days": 2,
     "tp_dd": 0.08,
     "tp_ma": 20
-   }
+   },
+   "entry_date": "2026-09-02",
+   "entry_px": 120.06,
+   "last_date": "2026-09-02",
+   "last_px": 118.28,
+   "peak_close": 118.28,
+   "float_pct": -1.5,
+   "days": 0,
+   "exit_line": 117.45
   },
   {
    "signal_date": "2026-09-01",
-   "status": "pending",
+   "status": "open",
    "signal_px": 42.13,
    "signal_ma60": 41.38,
    "code": "688297.SH",
@@ -19472,7 +19495,15 @@
     "stop_days": 2,
     "tp_dd": 0.08,
     "tp_ma": 20
-   }
+   },
+   "entry_date": "2026-09-02",
+   "entry_px": 42.19,
+   "last_date": "2026-09-02",
+   "last_px": 42.7,
+   "peak_close": 42.7,
+   "float_pct": 1.2,
+   "days": 0,
+   "exit_line": 41.36
   }
  ]
 }
