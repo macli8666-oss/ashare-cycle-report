@@ -4177,12 +4177,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-09-03",
-   "last_px": 27.65,
+   "last_date": "2026-09-04",
+   "last_px": 27.54,
    "peak_close": 28.62,
-   "float_pct": 12.5,
-   "days": 26,
-   "exit_line": 24.98
+   "float_pct": 12.1,
+   "days": 27,
+   "exit_line": 25.05
   },
   {
    "signal_date": "2025-07-02",
@@ -16114,12 +16114,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-09-03",
-   "last_px": 37.5,
-   "peak_close": 37.89,
-   "float_pct": 33.9,
-   "days": 23,
-   "exit_line": 28.55
+   "last_date": "2026-09-04",
+   "last_px": 37.9,
+   "peak_close": 37.9,
+   "float_pct": 35.4,
+   "days": 24,
+   "exit_line": 28.73
   },
   {
    "signal_date": "2025-06-11",
@@ -17629,12 +17629,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-09-03",
+   "last_date": "2026-09-04",
    "last_px": 26.24,
    "peak_close": 27.62,
    "float_pct": 5.7,
-   "days": 19,
-   "exit_line": 24.44
+   "days": 20,
+   "exit_line": 24.43
   },
   {
    "signal_date": "2026-08-10",
@@ -18116,12 +18116,12 @@
     "tp_dd": 0.1,
     "tp_ma": 20
    },
-   "last_date": "2026-09-03",
-   "last_px": 47.78,
+   "last_date": "2026-09-04",
+   "last_px": 47.61,
    "peak_close": 48.78,
-   "float_pct": 8.1,
-   "days": 14,
-   "exit_line": 44.08
+   "float_pct": 7.7,
+   "days": 15,
+   "exit_line": 44.09
   },
   {
    "signal_date": "2026-07-27",
@@ -18537,12 +18537,12 @@
    },
    "entry_date": "2026-08-21",
    "entry_px": 53.01,
-   "last_date": "2026-09-03",
-   "last_px": 58.0,
-   "peak_close": 58.0,
-   "float_pct": 9.4,
-   "days": 9,
-   "exit_line": 52.46
+   "last_date": "2026-09-04",
+   "last_px": 58.24,
+   "peak_close": 58.24,
+   "float_pct": 9.9,
+   "days": 10,
+   "exit_line": 52.56
   },
   {
    "signal_date": "2026-08-21",
@@ -18773,12 +18773,12 @@
    },
    "entry_date": "2026-08-25",
    "entry_px": 30.2,
-   "last_date": "2026-09-03",
-   "last_px": 30.92,
+   "last_date": "2026-09-04",
+   "last_px": 30.8,
    "peak_close": 31.96,
-   "float_pct": 2.4,
-   "days": 7,
-   "exit_line": 30.0
+   "float_pct": 2.0,
+   "days": 8,
+   "exit_line": 30.01
   },
   {
    "signal_date": "2026-08-24",
@@ -18797,12 +18797,12 @@
    },
    "entry_date": "2026-08-25",
    "entry_px": 31.01,
-   "last_date": "2026-09-03",
-   "last_px": 34.04,
-   "peak_close": 34.04,
-   "float_pct": 9.8,
-   "days": 7,
-   "exit_line": 31.08
+   "last_date": "2026-09-04",
+   "last_px": 34.21,
+   "peak_close": 34.21,
+   "float_pct": 10.3,
+   "days": 8,
+   "exit_line": 31.11
   },
   {
    "signal_date": "2026-08-24",
@@ -18821,12 +18821,12 @@
    },
    "entry_date": "2026-08-25",
    "entry_px": 37.67,
-   "last_date": "2026-09-03",
-   "last_px": 39.27,
+   "last_date": "2026-09-04",
+   "last_px": 39.17,
    "peak_close": 39.27,
-   "float_pct": 4.2,
-   "days": 7,
-   "exit_line": 37.9
+   "float_pct": 4.0,
+   "days": 8,
+   "exit_line": 37.98
   },
   {
    "signal_date": "2026-08-24",
@@ -18845,12 +18845,12 @@
    },
    "entry_date": "2026-08-25",
    "entry_px": 9.42,
-   "last_date": "2026-09-03",
-   "last_px": 9.81,
+   "last_date": "2026-09-04",
+   "last_px": 9.67,
    "peak_close": 9.82,
-   "float_pct": 4.1,
-   "days": 7,
-   "exit_line": 9.29
+   "float_pct": 2.7,
+   "days": 8,
+   "exit_line": 9.28
   },
   {
    "signal_date": "2026-08-24",
@@ -18885,7 +18885,7 @@
   },
   {
    "signal_date": "2026-08-25",
-   "status": "open",
+   "status": "closed",
    "signal_px": 7.03,
    "signal_ma60": 6.88,
    "code": "000876.SZ",
@@ -18904,9 +18904,15 @@
    "last_px": 7.0,
    "peak_close": 7.21,
    "float_pct": 0.1,
-   "days": 6,
+   "days": 7,
    "exit_line": 6.86,
-   "pending_exit": "止盈：收盘跌破MA20"
+   "pending_exit": "止盈：收盘跌破MA20",
+   "exit_date": "2026-09-04",
+   "exit_px": 7.0,
+   "reason": "止盈：收盘跌破MA20",
+   "exit_signal_date": "2026-09-03",
+   "max_up": 3.1,
+   "pnl": 0.14
   },
   {
    "signal_date": "2026-08-25",
@@ -18987,12 +18993,12 @@
    },
    "entry_date": "2026-08-27",
    "entry_px": 30.25,
-   "last_date": "2026-09-03",
-   "last_px": 30.92,
+   "last_date": "2026-09-04",
+   "last_px": 30.8,
    "peak_close": 31.96,
-   "float_pct": 2.2,
-   "days": 5,
-   "exit_line": 30.0
+   "float_pct": 1.8,
+   "days": 6,
+   "exit_line": 30.01
   },
   {
    "signal_date": "2026-08-26",
@@ -19042,12 +19048,12 @@
    },
    "entry_date": "2026-08-27",
    "entry_px": 14.76,
-   "last_date": "2026-09-03",
-   "last_px": 15.17,
-   "peak_close": 15.42,
-   "float_pct": 2.8,
-   "days": 5,
-   "exit_line": 14.82
+   "last_date": "2026-09-04",
+   "last_px": 16.19,
+   "peak_close": 16.19,
+   "float_pct": 9.7,
+   "days": 6,
+   "exit_line": 14.86
   },
   {
    "signal_date": "2026-08-26",
@@ -19097,12 +19103,12 @@
    },
    "entry_date": "2026-08-27",
    "entry_px": 9.55,
-   "last_date": "2026-09-03",
-   "last_px": 9.81,
+   "last_date": "2026-09-04",
+   "last_px": 9.67,
    "peak_close": 9.82,
-   "float_pct": 2.7,
-   "days": 5,
-   "exit_line": 9.29
+   "float_pct": 1.3,
+   "days": 6,
+   "exit_line": 9.28
   },
   {
    "signal_date": "2026-08-27",
@@ -19245,12 +19251,12 @@
    },
    "entry_date": "2026-08-28",
    "entry_px": 18.96,
-   "last_date": "2026-09-03",
-   "last_px": 19.94,
+   "last_date": "2026-09-04",
+   "last_px": 20.0,
    "peak_close": 20.22,
-   "float_pct": 5.2,
-   "days": 4,
-   "exit_line": 19.04
+   "float_pct": 5.5,
+   "days": 5,
+   "exit_line": 19.07
   },
   {
    "signal_date": "2026-08-28",
@@ -19493,16 +19499,16 @@
    },
    "entry_date": "2026-09-02",
    "entry_px": 10.46,
-   "last_date": "2026-09-03",
-   "last_px": 10.34,
-   "peak_close": 10.36,
-   "float_pct": -1.1,
-   "days": 1,
-   "exit_line": 10.37
+   "last_date": "2026-09-04",
+   "last_px": 10.47,
+   "peak_close": 10.47,
+   "float_pct": 0.1,
+   "days": 2,
+   "exit_line": 10.36
   },
   {
    "signal_date": "2026-09-01",
-   "status": "open",
+   "status": "closed",
    "signal_px": 120.67,
    "signal_ma60": 117.42,
    "code": "600809.SH",
@@ -19521,9 +19527,15 @@
    "last_px": 116.96,
    "peak_close": 118.28,
    "float_pct": -2.6,
-   "days": 1,
+   "days": 2,
    "exit_line": 117.42,
-   "pending_exit": "止盈：收盘跌破MA20"
+   "pending_exit": "止盈：收盘跌破MA20",
+   "exit_date": "2026-09-04",
+   "exit_px": 116.86,
+   "reason": "止盈：收盘跌破MA20",
+   "exit_signal_date": "2026-09-03",
+   "max_up": -1.5,
+   "pnl": -2.67
   },
   {
    "signal_date": "2026-09-01",
@@ -19542,12 +19554,108 @@
    },
    "entry_date": "2026-09-02",
    "entry_px": 42.19,
-   "last_date": "2026-09-03",
-   "last_px": 42.72,
+   "last_date": "2026-09-04",
+   "last_px": 42.54,
    "peak_close": 42.72,
-   "float_pct": 1.3,
-   "days": 1,
-   "exit_line": 41.32
+   "float_pct": 0.8,
+   "days": 2,
+   "exit_line": 41.27
+  },
+  {
+   "signal_date": "2026-09-04",
+   "status": "pending",
+   "signal_px": 10.47,
+   "signal_ma60": 10.36,
+   "code": "600104.SH",
+   "name": "上汽集团",
+   "ind": "汽车",
+   "zone": 2.0,
+   "rules": {
+    "entry_band": 0.03,
+    "stop_days": 2,
+    "tp_dd": 0.08,
+    "tp_ma": 20
+   }
+  },
+  {
+   "signal_date": "2026-09-04",
+   "status": "pending",
+   "signal_px": 22.03,
+   "signal_ma60": 21.79,
+   "code": "600570.SH",
+   "name": "恒生电子",
+   "ind": "计算机",
+   "zone": 3.1,
+   "rules": {
+    "entry_band": 0.03,
+    "stop_days": 2,
+    "tp_dd": 0.08,
+    "tp_ma": 20
+   }
+  },
+  {
+   "signal_date": "2026-09-04",
+   "status": "pending",
+   "signal_px": 10.19,
+   "signal_ma60": 10.1,
+   "code": "600588.SH",
+   "name": "用友网络",
+   "ind": "计算机",
+   "zone": 3.1,
+   "rules": {
+    "entry_band": 0.03,
+    "stop_days": 2,
+    "tp_dd": 0.08,
+    "tp_ma": 20
+   }
+  },
+  {
+   "signal_date": "2026-09-04",
+   "status": "pending",
+   "signal_px": 27.67,
+   "signal_ma60": 27.36,
+   "code": "002558.SZ",
+   "name": "巨人网络",
+   "ind": "传媒",
+   "zone": 3.1,
+   "rules": {
+    "entry_band": 0.03,
+    "stop_days": 2,
+    "tp_dd": 0.08,
+    "tp_ma": 20
+   }
+  },
+  {
+   "signal_date": "2026-09-04",
+   "status": "pending",
+   "signal_px": 11.64,
+   "signal_ma60": 11.59,
+   "code": "300251.SZ",
+   "name": "光线传媒",
+   "ind": "传媒",
+   "zone": 3.1,
+   "rules": {
+    "entry_band": 0.03,
+    "stop_days": 2,
+    "tp_dd": 0.08,
+    "tp_ma": 20
+   }
+  },
+  {
+   "signal_date": "2026-09-04",
+   "status": "pending",
+   "signal_px": 27.99,
+   "signal_ma60": 27.98,
+   "code": "600030.SH",
+   "name": "中信证券",
+   "ind": "非银金融",
+   "zone": 3.4,
+   "rules": {
+    "entry_band": 0.03,
+    "stop_days": 2,
+    "tp_dd": 0.08,
+    "tp_ma": 20
+   }
   }
  ]
 }
