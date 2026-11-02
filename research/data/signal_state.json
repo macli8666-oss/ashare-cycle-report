@@ -1,40 +1,40 @@
 {
  "cu": {
-  "last_close": 14343.0,
-  "last_date": "2026-10-29",
-  "above": true,
+  "last_close": 14129.5,
+  "last_date": "2026-10-30",
+  "above": false,
   "last_cross_eval": [
    "above",
-   "2026-10-23"
+   "2026-10-30"
   ],
   "near_alerted": "2026-W08"
  },
  "gold": {
-  "last_close": 4033.2,
-  "last_date": "2026-10-29",
+  "last_close": 3884.4,
+  "last_date": "2026-10-30",
   "above4500": false,
   "below3800": false,
   "last_cross_eval": [
    "below3800",
-   "2026-10-23"
+   "2026-10-30"
   ],
   "near_alerted": "2026-W08"
  },
  "brent": {
-  "last_close": 111.51,
-  "last_date": "2026-10-29",
+  "last_close": 113.4,
+  "last_date": "2026-10-30",
   "streak80": true,
   "below65": false,
-  "last_streak_eval": "2026-10-23",
+  "last_streak_eval": "2026-10-30",
   "last_cross_eval": [
    "below65",
-   "2026-10-23"
+   "2026-10-30"
   ]
  },
  "rzrq": {
   "below": true,
-  "last_date": "2026-10-29",
-  "last_val": 23849.60766121,
+  "last_date": "2026-10-30",
+  "last_val": 23431.31666314,
   "near_alerted": "2026-W09"
  },
  "cn10y": {
